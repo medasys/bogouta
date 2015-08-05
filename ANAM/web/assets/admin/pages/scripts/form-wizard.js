@@ -148,7 +148,7 @@ var FormWizard = function () {
             });
 
             var displayConfirm = function() {
-                $('#tab4 .form-control-static', form).each(function(){
+                $('#tab6 .form-control-static', form).each(function(){
                     var input = $('[name="'+$(this).attr("data-display")+'"]', form);
                     if (input.is(":radio")) {
                         input = $('[name="'+$(this).attr("data-display")+'"]:checked', form);
@@ -156,7 +156,7 @@ var FormWizard = function () {
                     if (input.is(":text") || input.is("textarea")) {
                         $(this).html(input.val());
                     } else if (input.is("select")) {
-                        $(this).html(input.find('option:selected').text());
+                        $(this).html(input.find('option:selected').text());    
                     } else if (input.is(":radio") && input.is(":checked")) {
                         $(this).html(input.attr("data-title"));
                     } else if ($(this).attr("data-display") == 'payment[]') {
@@ -173,7 +173,7 @@ var FormWizard = function () {
                 var total = navigation.find('li').length;
                 var current = index + 1;
                 // set wizard title
-                $('.step-title', $('#form_wizard_1')).text('Step ' + (index + 1) + ' of ' + total);
+                $('.step-title', $('#form_wizard_1')).text('Etape ' + (index + 1) + ' sur ' + total);
                 // set done steps
                 jQuery('li', $('#form_wizard_1')).removeClass("done");
                 var li_list = navigation.find('li');

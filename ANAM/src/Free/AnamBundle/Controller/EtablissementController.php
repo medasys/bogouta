@@ -12,7 +12,7 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 class EtablissementController extends Controller
 {
     /**
-     * @Route("/ajouter",name="free_anam_etablissement_ajouter")
+     * @Route("/ajouter", name="free_anam_etablissement_ajouter")
      * @Template()
      */
     public function ajouterAction(\Symfony\Component\HttpFoundation\Request $request)
@@ -87,6 +87,22 @@ class EtablissementController extends Controller
         return array(
             'entities' => $entities
         );      
+        
+    }
+    
+    /**
+     * @Route("/supprimer/{id}", name= "free_anam_etablissement_supprimer")
+     * @Template()
+     */
+    public function supprimerAction($id)
+    {
+        
+        $em = $this->getDoctrine()->getManager();
+        $entity = $em->getRepository("FreeAnamBundle:Etablissement")->find($id);
+        $em->remove($entity);
+        $em->flush();
+
+        return $this->redirect($this->generateUrl("free_anam_etablissement_lister"));
         
     }
 
