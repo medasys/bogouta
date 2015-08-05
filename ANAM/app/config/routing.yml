@@ -1,3 +1,5 @@
-app:
-    resource: "@AppBundle/Controller/"
+free_anam:
+    resource: "@FreeAnamBundle/Controller/"
     type:     annotation
+    prefix:   /
+
