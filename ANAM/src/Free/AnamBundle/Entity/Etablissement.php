@@ -24,77 +24,77 @@ class Etablissement
     /**
      * @var string
      *
-     * @ORM\Column(name="codeEtablissement", type="string", length=9)
+     * @ORM\Column(name="codeEtablissement", type="string", length=9, nullable=true)
      */
     private $codeEtablissement;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="nom", type="string", length=150)
+     * @ORM\Column(name="nom", type="string", length=150, nullable=true)
      */
     private $nom;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="codeEtablissementPere", type="string", length=9)
+     * @ORM\Column(name="codeEtablissementPere", type="string", length=9, nullable=true)
      */
     private $codeEtablissementPere;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="secteur",  type="boolean")
+     * @ORM\Column(name="secteur",  type="string", length=7, nullable=true)
      */
     private $secteur;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="nAffiation", type="string", length=9)
+     * @ORM\Column(name="nAffiation", type="string", length=9, nullable=true)
      */
     private $nAffiation;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="adresse", type="text")
+     * @ORM\Column(name="adresse", type="text", nullable=true)
      */
     private $adresse;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="codePostale", type="string", length=9)
+     * @ORM\Column(name="codePostale", type="string", length=9, nullable=true)
      */
     private $codePostale;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="ville", type="string", length=100)
+     * @ORM\Column(name="ville", type="string", length=100, nullable=true)
      */
     private $ville;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="tel", type="string", length=15)
+     * @ORM\Column(name="tel", type="string", length=15, nullable=true)
      */
     private $tel;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="fax", type="string", length=30)
+     * @ORM\Column(name="fax", type="string", length=30, nullable=true)
      */
     private $fax;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="mail", type="string", length=150)
+     * @ORM\Column(name="mail", type="string", length=150, nullable=true )
      */
     private $mail;
     
@@ -487,5 +487,10 @@ class Etablissement
     public function getFiliere()
     {
         return $this->filiere;
+    }
+    
+       public function __toString()
+    {
+        return $this->getNom();
     }
 }

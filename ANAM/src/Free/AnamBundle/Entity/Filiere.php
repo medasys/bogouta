@@ -31,7 +31,7 @@ class Filiere
     /**
      * @var string
      *
-     * @ORM\Column(name="description", type="string", length=100)
+     * @ORM\Column(name="description", type="string", length=100, nullable=true)
      */
     private $description;
     

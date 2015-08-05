@@ -26,8 +26,29 @@ class EtablissementType extends AbstractType
             ->add('tel')
             ->add('fax')
             ->add('mail')
-            
-            ->add('envoyer','submit')
+            ->add('filiere','collection', array('type'         => new FiliereType(),
+                                              'allow_add'    => true,
+                                              'allow_delete' => true,
+                                              'by_reference' => false,
+                                              'options'  => array(
+                                                'required'  => true                                              
+    )
+                    )
+                        
+                    
+                    )
+            ->add('faculte','collection', array('type'         => new FaculteType(),
+                                              'allow_add'    => true,
+                                              'allow_delete' => true,
+                                              'by_reference' => false,
+                                              'options'  => array(
+                                                'required'  => true                                              
+    )
+                    )
+                        
+                    
+                    )
+            ->add('submit','submit')
         ;
     }
     
