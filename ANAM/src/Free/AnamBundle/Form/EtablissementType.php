@@ -18,7 +18,7 @@ class EtablissementType extends AbstractType
             ->add('codeEtablissement')
             ->add('nom')
             ->add('codeEtablissementPere')
-            ->add('secteur')
+            ->add('secteur', 'choice', array('choices' => array('Public' => 'Public', 'Prive' => 'Privé')))
             ->add('nAffiation')
             ->add('adresse')
             ->add('codePostale')
