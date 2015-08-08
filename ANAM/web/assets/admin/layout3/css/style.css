@@ -1,0 +1,53 @@
+.barcode {
+	text-align: right;
+}
+
+.barcode img {
+	border: 1px solid #666666;
+	padding: 5px;
+	width: 300px;
+	margin-right: 0px;
+}
+
+.sheet {
+	border: 1px solid #DDDDDD;
+	padding: 5px;
+}
+
+.title {
+	background: #CCCCCC;
+	text-align: center;
+	font-weight: bold;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+.subtitle {
+	text-align: center;
+}
+
+.block {
+	border: 1px solid #666666;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.spacer {
+	height: 10px;
+}
+
+.spacer-bottom {
+	height: 60px;
+}
+
+.fiche-1 {
+	display: none;
+}
+
+.block table {
+	width: 100%;
+}
+
+.block table tr td {
+	width: 50%;
+}

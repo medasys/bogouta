@@ -34,7 +34,8 @@ var FormWizard = function () {
                 focusInvalid: false, // do not focus the last invalid input
                 rules: {
                     //account
-                    prenom: {
+                    username: {
+                        minlength: 5,
                         required: true
                     },
                     password: {
@@ -47,7 +48,7 @@ var FormWizard = function () {
                         equalTo: "#submit_form_password"
                     },
                     //profile
-                    nom: {
+                    fullname: {
                         required: true
                     },
                     email: {
@@ -155,7 +156,7 @@ var FormWizard = function () {
                     if (input.is(":text") || input.is("textarea")) {
                         $(this).html(input.val());
                     } else if (input.is("select")) {
-                        $(this).html(input.find('option:selected').text());    
+                        $(this).html(input.find('option:selected').text());
                     } else if (input.is(":radio") && input.is(":checked")) {
                         $(this).html(input.attr("data-title"));
                     } else if ($(this).attr("data-display") == 'payment[]') {
@@ -240,7 +241,7 @@ var FormWizard = function () {
 
             $('#form_wizard_1').find('.button-previous').hide();
             $('#form_wizard_1 .button-submit').click(function () {
-                alert('Finished! Hope you like it :)');
+                alert('Votre demande à bie été enreigistrée');
             }).hide();
 
             //apply validation on select2 dropdown value change, this only needed for chosen dropdown integration.

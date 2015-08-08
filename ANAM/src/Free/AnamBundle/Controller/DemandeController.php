@@ -107,5 +107,33 @@ class DemandeController extends Controller
         return $this->redirect($this->generateUrl("free_anam_demande_lister"));
         
     }
+    
+    /**
+     * @Route("/envoyer", name="free_anam_demande_envoyer")
+     * @Template()
+     */
+    public function envoyerAction()
+    {
+       $entities = $this->getDoctrine()->getManager()->getRepository("FreeAnamBundle:Demande")->findAll();
+
+        return array(
+            'entities' => $entities
+        );      
+        
+    }
+    
+    /**
+     * @Route("/suivre", name="free_anam_demande_suivre")
+     * @Template()
+     */
+    public function suivreAction()
+    {
+       $entities = $this->getDoctrine()->getManager()->getRepository("FreeAnamBundle:Demande")->findAll();
+
+        return array(
+            'entities' => $entities
+        );      
+        
+    }
 
 }

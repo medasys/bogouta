@@ -14,7 +14,7 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 class TraitementController extends Controller
 {
     /**
-     * @Route("/importer")
+     * @Route("/importer", name="free_anam_traitement_importer")
      * @Template()
      */
     public function importerAction()
@@ -24,7 +24,7 @@ class TraitementController extends Controller
             );    }
 
     /**
-     * @Route("/exporter")
+     * @Route("/exporter", name="free_anam_traitement_exporter")
      * @Template()
      */
     public function exporterAction()
@@ -34,7 +34,7 @@ class TraitementController extends Controller
             );    }
 
     /**
-     * @Route("/controle")
+     * @Route("/controle", name="free_anam_traitement_controle")
      * @Template()
      */
     public function controleAction()

@@ -677,6 +677,7 @@ Page Footer
 Page Header
 ***/
 .page-header {
+  margin: 0px;
   opacity: 1 ;
   filter: alpha(opacity=100) ;
   width: 100%;

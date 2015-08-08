@@ -2,1082 +2,1639 @@
 
 
 {% block body %}
-    <!-- BEGIN PAGE CONTAINER -->
-    <div class="page-container">
-        <!-- BEGIN PAGE HEAD -->
-        <div class="page-head">
-            <div class="container">
-                <!-- BEGIN PAGE TITLE -->
-                <div class="page-title">
-                    <h1>Formulaire d'inscrition <small>formulaire de demande de couverture</small></h1>
-                </div>
-                <!-- END PAGE TITLE -->
-                <!-- BEGIN PAGE TOOLBAR -->
-                <div class="page-toolbar">
-                    <!-- BEGIN THEME PANEL -->
-                    <div class="btn-group btn-theme-panel">
-                        <a href="javascript:;" class="btn dropdown-toggle" data-toggle="dropdown">
-                            <i class="icon-settings"></i>
-                        </a>
-                        <div class="dropdown-menu theme-panel pull-right dropdown-custom hold-on-click">
-                            <div class="row">
-                                <div class="col-md-6 col-sm-6 col-xs-12">
-                                    <h3>THEME COLORS</h3>
-                                    <div class="row">
-                                        <div class="col-md-6 col-sm-6 col-xs-12">
-                                            <ul class="theme-colors">
-                                                <li class="theme-color theme-color-default" data-theme="default">
-                                                    <span class="theme-color-view"></span>
-                                                    <span class="theme-color-name">Default</span>
-                                                </li>
-                                                <li class="theme-color theme-color-blue-hoki" data-theme="blue-hoki">
-                                                    <span class="theme-color-view"></span>
-                                                    <span class="theme-color-name">Blue Hoki</span>
-                                                </li>
-                                                <li class="theme-color theme-color-blue-steel" data-theme="blue-steel">
-                                                    <span class="theme-color-view"></span>
-                                                    <span class="theme-color-name">Blue Steel</span>
-                                                </li>
-                                                <li class="theme-color theme-color-yellow-orange" data-theme="yellow-orange">
-                                                    <span class="theme-color-view"></span>
-                                                    <span class="theme-color-name">Orange</span>
-                                                </li>
-                                                <li class="theme-color theme-color-yellow-crusta" data-theme="yellow-crusta">
-                                                    <span class="theme-color-view"></span>
-                                                    <span class="theme-color-name">Yellow Crusta</span>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-md-6 col-sm-6 col-xs-12">
-                                            <ul class="theme-colors">
-                                                <li class="theme-color theme-color-green-haze" data-theme="green-haze">
-                                                    <span class="theme-color-view"></span>
-                                                    <span class="theme-color-name">Green Haze</span>
-                                                </li>
-                                                <li class="theme-color theme-color-red-sunglo" data-theme="red-sunglo">
-                                                    <span class="theme-color-view"></span>
-                                                    <span class="theme-color-name">Red Sunglo</span>
-                                                </li>
-                                                <li class="theme-color theme-color-red-intense" data-theme="red-intense">
-                                                    <span class="theme-color-view"></span>
-                                                    <span class="theme-color-name">Red Intense</span>
-                                                </li>
-                                                <li class="theme-color theme-color-purple-plum" data-theme="purple-plum">
-                                                    <span class="theme-color-view"></span>
-                                                    <span class="theme-color-name">Purple Plum</span>
-                                                </li>
-                                                <li class="theme-color theme-color-purple-studio" data-theme="purple-studio">
-                                                    <span class="theme-color-view"></span>
-                                                    <span class="theme-color-name">Purple Studio</span>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 col-sm-6 col-xs-12 seperator">
-                                    <h3>LAYOUT</h3>
-                                    <ul class="theme-settings">
-                                        <li>
-                                            Theme Style
-                                            <select class="theme-setting theme-setting-style form-control input-sm input-small input-inline tooltips" data-original-title="Change theme style" data-container="body" data-placement="left">
-                                                <option value="boxed" selected="selected">Square corners</option>
-                                                <option value="rounded">Rounded corners</option>
-                                            </select>
-                                        </li>
-                                        <li>
-                                            Layout
-                                            <select class="theme-setting theme-setting-layout form-control input-sm input-small input-inline tooltips" data-original-title="Change layout type" data-container="body" data-placement="left">
-                                                <option value="boxed" selected="selected">Boxed</option>
-                                                <option value="fluid">Fluid</option>
-                                            </select>
-                                        </li>
-                                        <li>
-                                            Top Menu Style
-                                            <select class="theme-setting theme-setting-top-menu-style form-control input-sm input-small input-inline tooltips" data-original-title="Change top menu dropdowns style" data-container="body" data-placement="left">
-                                                <option value="dark" selected="selected">Dark</option>
-                                                <option value="light">Light</option>
-                                            </select>
-                                        </li>
-                                        <li>
-                                            Top Menu Mode
-                                            <select class="theme-setting theme-setting-top-menu-mode form-control input-sm input-small input-inline tooltips" data-original-title="Enable fixed(sticky) top menu" data-container="body" data-placement="left">
-                                                <option value="fixed">Fixed</option>
-                                                <option value="not-fixed" selected="selected">Not Fixed</option>
-                                            </select>
-                                        </li>
-                                        <li>
-                                            Mega Menu Style
-                                            <select class="theme-setting theme-setting-mega-menu-style form-control input-sm input-small input-inline tooltips" data-original-title="Change mega menu dropdowns style" data-container="body" data-placement="left">
-                                                <option value="dark" selected="selected">Dark</option>
-                                                <option value="light">Light</option>
-                                            </select>
-                                        </li>
-                                        <li>
-                                            Mega Menu Mode
-                                            <select class="theme-setting theme-setting-mega-menu-mode form-control input-sm input-small input-inline tooltips" data-original-title="Enable fixed(sticky) mega menu" data-container="body" data-placement="left">
-                                                <option value="fixed" selected="selected">Fixed</option>
-                                                <option value="not-fixed">Not Fixed</option>
-                                            </select>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- END THEME PANEL -->
-                </div>
-                <!-- END PAGE TOOLBAR -->
-            </div>
-        </div>
-        <!-- END PAGE HEAD -->
-        <!-- BEGIN PAGE CONTENT -->
-        <div class="page-content">
-            <div class="container">
-                <!-- BEGIN SAMPLE PORTLET CONFIGURATION MODAL FORM-->
-                <div class="modal fade" id="portlet-config" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
-                                <h4 class="modal-title">Modal title</h4>
-                            </div>
-                            <div class="modal-body">
-                                Widget settings form goes here
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn blue">Save changes</button>
-                                <button type="button" class="btn default" data-dismiss="modal">Close</button>
-                            </div>
-                        </div>
-                        <!-- /.modal-content -->
-                    </div>
-                    <!-- /.modal-dialog -->
-                </div>
-                <!-- /.modal -->
-                <!-- END SAMPLE PORTLET CONFIGURATION MODAL FORM-->
-                <!-- BEGIN PAGE BREADCRUMB -->
-                <ul class="page-breadcrumb breadcrumb">
-                    <li>
-                        <a href="#">Home</a><i class="fa fa-circle"></i>
-                    </li>
-                    <li class="active">
-                        Formulaire d'insciption
-                    </li>
-                </ul>
-                <!-- END PAGE BREADCRUMB -->
-                <!-- BEGIN PAGE CONTENT INNER -->
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="portlet light" id="form_wizard_1">
-                            <div class="portlet-title">
-                                <div class="caption">
-                                    <span class="caption-subject font-green-sharp bold uppercase">
-                                        <i class="fa fa-heart"></i> Formulaire de d'inscription - <span class="step-title">Etape 1 sur 6 </span>
-                                    </span>
-                                </div>
-                                <div class="tools">
-                                    <a href="javascript:;" class="collapse">
-                                    </a>
-                                    <a href="#portlet-config" data-toggle="modal" class="config">
-                                    </a>
-                                    <a href="javascript:;" class="reload">
-                                    </a>
-                                    <a href="javascript:;" class="remove">
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="portlet-body form">
-                                <form action="javascript:;" class="form-horizontal" id="submit_form" method="POST">
-                                    <div class="form-wizard">
-                                        <div class="form-body">
-                                            <ul class="nav nav-pills nav-justified steps">
-                                                <li>
-                                                    <a href="#tab1" data-toggle="tab" class="step">
-                                                        <span class="number">
-                                                            1 </span>
-                                                        <span class="desc">
-                                                            <i class="fa fa-check"></i> Identité </span>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="#tab2" data-toggle="tab" class="step">
-                                                        <span class="number">
-                                                            2 </span>
-                                                        <span class="desc">
-                                                            <i class="fa fa-check"></i> Résidence  </span>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="#tab3" data-toggle="tab" class="step active">
-                                                        <span class="number">
-                                                            3 </span>
-                                                        <span class="desc">
-                                                            <i class="fa fa-check"></i> Affiliation </span>
-                                                    </a>
-                                                </li>
+  <!-- BEGIN PAGE CONTAINER -->
+<div class="page-container">
+	<!-- BEGIN PAGE HEAD -->
+	<div class="page-head">
+		<div class="container">
+			<!-- BEGIN PAGE TITLE -->
+			<div class="page-title">
+				<h1>Formulaire de demande <small>demande de couverture médicale</small></h1>
+			</div>
+			<!-- END PAGE TITLE -->
+			<!-- BEGIN PAGE TOOLBAR -->
+			<div class="page-toolbar">
+				<!-- BEGIN THEME PANEL -->
+				<div class="btn-group btn-theme-panel">
+					<a href="javascript:;" class="btn dropdown-toggle" data-toggle="dropdown">
+					<i class="icon-settings"></i>
+					</a>
+					<div class="dropdown-menu theme-panel pull-right dropdown-custom hold-on-click">
+						<div class="row">
+							<div class="col-md-6 col-sm-6 col-xs-12">
+								<h3>THEME COLORS</h3>
+								<div class="row">
+									<div class="col-md-6 col-sm-6 col-xs-12">
+										<ul class="theme-colors">
+											<li class="theme-color theme-color-default" data-theme="default">
+												<span class="theme-color-view"></span>
+												<span class="theme-color-name">Default</span>
+											</li>
+											<li class="theme-color theme-color-blue-hoki" data-theme="blue-hoki">
+												<span class="theme-color-view"></span>
+												<span class="theme-color-name">Blue Hoki</span>
+											</li>
+											<li class="theme-color theme-color-blue-steel" data-theme="blue-steel">
+												<span class="theme-color-view"></span>
+												<span class="theme-color-name">Blue Steel</span>
+											</li>
+											<li class="theme-color theme-color-yellow-orange" data-theme="yellow-orange">
+												<span class="theme-color-view"></span>
+												<span class="theme-color-name">Orange</span>
+											</li>
+											<li class="theme-color theme-color-yellow-crusta" data-theme="yellow-crusta">
+												<span class="theme-color-view"></span>
+												<span class="theme-color-name">Yellow Crusta</span>
+											</li>
+										</ul>
+									</div>
+									<div class="col-md-6 col-sm-6 col-xs-12">
+										<ul class="theme-colors">
+											<li class="theme-color theme-color-green-haze" data-theme="green-haze">
+												<span class="theme-color-view"></span>
+												<span class="theme-color-name">Green Haze</span>
+											</li>
+											<li class="theme-color theme-color-red-sunglo" data-theme="red-sunglo">
+												<span class="theme-color-view"></span>
+												<span class="theme-color-name">Red Sunglo</span>
+											</li>
+											<li class="theme-color theme-color-red-intense" data-theme="red-intense">
+												<span class="theme-color-view"></span>
+												<span class="theme-color-name">Red Intense</span>
+											</li>
+											<li class="theme-color theme-color-purple-plum" data-theme="purple-plum">
+												<span class="theme-color-view"></span>
+												<span class="theme-color-name">Purple Plum</span>
+											</li>
+											<li class="theme-color theme-color-purple-studio" data-theme="purple-studio">
+												<span class="theme-color-view"></span>
+												<span class="theme-color-name">Purple Studio</span>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 col-sm-6 col-xs-12 seperator">
+								<h3>LAYOUT</h3>
+								<ul class="theme-settings">
+									<li>
+										 Theme Style
+										<select class="theme-setting theme-setting-style form-control input-sm input-small input-inline tooltips" data-original-title="Change theme style" data-container="body" data-placement="left">
+											<option value="boxed" selected="selected">Square corners</option>
+											<option value="rounded">Rounded corners</option>
+										</select>
+									</li>
+									<li>
+										 Layout
+										<select class="theme-setting theme-setting-layout form-control input-sm input-small input-inline tooltips" data-original-title="Change layout type" data-container="body" data-placement="left">
+											<option value="boxed" selected="selected">Boxed</option>
+											<option value="fluid">Fluid</option>
+										</select>
+									</li>
+									<li>
+										 Top Menu Style
+										<select class="theme-setting theme-setting-top-menu-style form-control input-sm input-small input-inline tooltips" data-original-title="Change top menu dropdowns style" data-container="body" data-placement="left">
+											<option value="dark" selected="selected">Dark</option>
+											<option value="light">Light</option>
+										</select>
+									</li>
+									<li>
+										 Top Menu Mode
+										<select class="theme-setting theme-setting-top-menu-mode form-control input-sm input-small input-inline tooltips" data-original-title="Enable fixed(sticky) top menu" data-container="body" data-placement="left">
+											<option value="fixed">Fixed</option>
+											<option value="not-fixed" selected="selected">Not Fixed</option>
+										</select>
+									</li>
+									<li>
+										 Mega Menu Style
+										<select class="theme-setting theme-setting-mega-menu-style form-control input-sm input-small input-inline tooltips" data-original-title="Change mega menu dropdowns style" data-container="body" data-placement="left">
+											<option value="dark" selected="selected">Dark</option>
+											<option value="light">Light</option>
+										</select>
+									</li>
+									<li>
+										 Mega Menu Mode
+										<select class="theme-setting theme-setting-mega-menu-mode form-control input-sm input-small input-inline tooltips" data-original-title="Enable fixed(sticky) mega menu" data-container="body" data-placement="left">
+											<option value="fixed" selected="selected">Fixed</option>
+											<option value="not-fixed">Not Fixed</option>
+										</select>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- END THEME PANEL -->
+			</div>
+			<!-- END PAGE TOOLBAR -->
+		</div>
+	</div>
+	<!-- END PAGE HEAD -->
+	<!-- BEGIN PAGE CONTENT -->
+	<div class="page-content">
+		<div class="container">
+			<!-- BEGIN SAMPLE PORTLET CONFIGURATION MODAL FORM-->
+			<div class="modal fade" id="portlet-config" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+							<h4 class="modal-title">Modal title</h4>
+						</div>
+						<div class="modal-body">
+							 Widget settings form goes here
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn blue">Save changes</button>
+							<button type="button" class="btn default" data-dismiss="modal">Close</button>
+						</div>
+					</div>
+					<!-- /.modal-content -->
+				</div>
+				<!-- /.modal-dialog -->
+			</div>
+			<!-- /.modal -->
+			<!-- END SAMPLE PORTLET CONFIGURATION MODAL FORM-->
+			<!-- BEGIN PAGE BREADCRUMB -->
+			<ul class="page-breadcrumb breadcrumb">
+				<li>
+					<a href="#">Home</a><i class="fa fa-circle"></i>
+				</li>
+				<li>
+					<a href="form_wizard.html">UI Components</a>
+					<i class="fa fa-circle"></i>
+				</li>
+				<li class="active">
+					 Form Wizard
+				</li>
+			</ul>
+			<!-- END PAGE BREADCRUMB -->
+			<!-- BEGIN PAGE CONTENT INNER -->
+			<div class="row">
+				<div class="col-md-12">
+					<div class="portlet light" id="form_wizard_1">
+						<div class="portlet-title">
+							<div class="caption">
+								<span class="caption-subject font-green-sharp bold ">
+								<i class="fa fa-gift"></i> Formaulaire de demande - <span class="step-title">Etape 1 sur 6 </span>
+								</span>
+							</div>
+							<div class="tools">
+								<a href="javascript:;" class="collapse">
+								</a>
+								<a href="#portlet-config" data-toggle="modal" class="config">
+								</a>
+								<a href="javascript:;" class="reload">
+								</a>
+								<a href="javascript:;" class="remove">
+								</a>
+							</div>
+						</div>
+						<div class="portlet-body form">
+							<form action="javascript:;" class="form-horizontal" id="submit_form" method="POST">
+								<div class="form-wizard">
+									<div class="form-body">
+										<ul class="nav nav-pills nav-justified steps">
+											<li>
+												<a href="#tab1" data-toggle="tab" class="step">
+												<span class="number">
+												1 </span>
+												<span class="desc">
+												<i class="fa fa-check"></i> Identité </span>
+												</a>
+											</li>
+											<li>
+												<a href="#tab2" data-toggle="tab" class="step">
+												<span class="number">
+												2 </span>
+												<span class="desc">
+												<i class="fa fa-check"></i>Résidence</span>
+												</a>
+											</li>
+											<li>
+												<a href="#tab3" data-toggle="tab" class="step active">
+												<span class="number">
+												3 </span>
+												<span class="desc">
+												<i class="fa fa-check"></i> Affiliation </span>
+												</a>
+											</li>
 
-                                                <li>
-                                                    <a href="#tab4" data-toggle="tab" class="step">
-                                                        <span class="number">
-                                                            4 </span>
-                                                        <span class="desc">
-                                                            <i class="fa fa-check"></i> Etablissement </span>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="#tab5" data-toggle="tab" class="step">
-                                                        <span class="number">
-                                                            5 </span>
-                                                        <span class="desc">
-                                                            <i class="fa fa-check"></i> Etat Civil </span>
-                                                    </a>
-                                                </li>
+											<li>
+												<a href="#tab4" data-toggle="tab" class="step">
+												<span class="number">
+												4 </span>
+												<span class="desc">
+												<i class="fa fa-check"></i> Etablissement </span>
+												</a>
+											</li>
+											<li>
+												<a href="#tab5" data-toggle="tab" class="step">
+												<span class="number">
+												5 </span>
+												<span class="desc">
+												<i class="fa fa-check"></i> Etat Civil </span>
+												</a>
+											</li>
+											
+											<li>
+												<a href="#tab6" data-toggle="tab" class="step">
+												<span class="number">
+												6 </span>
+												<span class="desc">
+												<i class="fa fa-check"></i> Validation </span>
+												</a>
+											</li>
+										</ul>
+										<div id="bar" class="progress progress-striped" role="progressbar">
+											<div class="progress-bar progress-bar-success">
+											</div>
+										</div>
+										<div class="tab-content">
+											<div class="alert alert-danger display-none">
+												<button class="close" data-dismiss="alert"></button>
+												Vous n'avez pas rempli correctement le formulaire. Vérifiez s'il vous plait.
+											</div>
+											<div class="alert alert-success display-none">
+												<button class="close" data-dismiss="alert"></button>
+												Votre demande à été enregistrée!
+											</div>
+											<div class="tab-pane active" id="tab1">
+												<h3 class="block">Veuillez entrer vos informations</h3>
+													<div class="form-group col-md-6 col-sm-12 ">
+														<!-- <div class="form-group">
+															<label class="control-label col-md-4">Vous êtes? <span class="required">
+																	* </span>
+															</label>
+																	<div class="col-md-6">
+																		<div class="radio-list">
+																			<label class="radio-inline">
+																			<input type="radio" name="origine" value="M" data-title="Marocain"/>
+																			Marocain </label>
+																			<label class="radio-inline">
+																			<input type="radio" name="origine" value="E" data-title="Etranger"/>
+																			Etranger </label>
+																		</div>
+																		<div id="form_gender_error">
+																		</div>
+																	</div>
+														</div> -->
+                                                                                                                <div class="form-group">
+															<label class="control-label col-md-4">Pays d'origine</label>
+															<div class="col-md-4">
+																<select name="pays" id="country_list" class="form-control" >
+																	<option value=""></option>
+																	<option value="AF">Afghanistan</option>
+																	<option value="AL">Albania</option>
+																	<option value="DZ">Algeria</option>
+																	<option value="AS">American Samoa</option>
+																	<option value="AD">Andorra</option>
+																	<option value="AO">Angola</option>
+																	<option value="AI">Anguilla</option>
+																	<option value="AR">Argentina</option>
+																	<option value="AM">Armenia</option>
+																	<option value="AW">Aruba</option>
+																	<option value="AU">Australia</option>
+																	<option value="AT">Austria</option>
+																	<option value="AZ">Azerbaijan</option>
+																	<option value="BS">Bahamas</option>
+																	<option value="BH">Bahrain</option>
+																	<option value="BD">Bangladesh</option>
+																	<option value="BB">Barbados</option>
+																	<option value="BY">Belarus</option>
+																	<option value="BE">Belgium</option>
+																	<option value="BZ">Belize</option>
+																	<option value="BJ">Benin</option>
+																	<option value="BM">Bermuda</option>
+																	<option value="BT">Bhutan</option>
+																	<option value="BO">Bolivia</option>
+																	<option value="BA">Bosnia and Herzegowina</option>
+																	<option value="BW">Botswana</option>
+																	<option value="BV">Bouvet Island</option>
+																	<option value="BR">Brazil</option>
+																	<option value="IO">British Indian Ocean Territory</option>
+																	<option value="BN">Brunei Darussalam</option>
+																	<option value="BG">Bulgaria</option>
+																	<option value="BF">Burkina Faso</option>
+																	<option value="BI">Burundi</option>
+																	<option value="KH">Cambodia</option>
+																	<option value="CM">Cameroon</option>
+																	<option value="CA">Canada</option>
+																	<option value="CV">Cape Verde</option>
+																	<option value="KY">Cayman Islands</option>
+																	<option value="CF">Central African Republic</option>
+																	<option value="TD">Chad</option>
+																	<option value="CL">Chile</option>
+																	<option value="CN">China</option>
+																	<option value="CX">Christmas Island</option>
+																	<option value="CC">Cocos (Keeling) Islands</option>
+																	<option value="CO">Colombia</option>
+																	<option value="KM">Comoros</option>
+																	<option value="CG">Congo</option>
+																	<option value="CD">Congo, the Democratic Republic of the</option>
+																	<option value="CK">Cook Islands</option>
+																	<option value="CR">Costa Rica</option>
+																	<option value="CI">Cote d'Ivoire</option>
+																	<option value="HR">Croatia (Hrvatska)</option>
+																	<option value="CU">Cuba</option>
+																	<option value="CY">Cyprus</option>
+																	<option value="CZ">Czech Republic</option>
+																	<option value="DK">Denmark</option>
+																	<option value="DJ">Djibouti</option>
+																	<option value="DM">Dominica</option>
+																	<option value="DO">Dominican Republic</option>
+																	<option value="EC">Ecuador</option>
+																	<option value="EG">Egypt</option>
+																	<option value="SV">El Salvador</option>
+																	<option value="GQ">Equatorial Guinea</option>
+																	<option value="ER">Eritrea</option>
+																	<option value="EE">Estonia</option>
+																	<option value="ET">Ethiopia</option>
+																	<option value="FK">Falkland Islands (Malvinas)</option>
+																	<option value="FO">Faroe Islands</option>
+																	<option value="FJ">Fiji</option>
+																	<option value="FI">Finland</option>
+																	<option value="FR">France</option>
+																	<option value="GF">French Guiana</option>
+																	<option value="PF">French Polynesia</option>
+																	<option value="TF">French Southern Territories</option>
+																	<option value="GA">Gabon</option>
+																	<option value="GM">Gambia</option>
+																	<option value="GE">Georgia</option>
+																	<option value="DE">Germany</option>
+																	<option value="GH">Ghana</option>
+																	<option value="GI">Gibraltar</option>
+																	<option value="GR">Greece</option>
+																	<option value="GL">Greenland</option>
+																	<option value="GD">Grenada</option>
+																	<option value="GP">Guadeloupe</option>
+																	<option value="GU">Guam</option>
+																	<option value="GT">Guatemala</option>
+																	<option value="GN">Guinea</option>
+																	<option value="GW">Guinea-Bissau</option>
+																	<option value="GY">Guyana</option>
+																	<option value="HT">Haiti</option>
+																	<option value="HM">Heard and Mc Donald Islands</option>
+																	<option value="VA">Holy See (Vatican City State)</option>
+																	<option value="HN">Honduras</option>
+																	<option value="HK">Hong Kong</option>
+																	<option value="HU">Hungary</option>
+																	<option value="IS">Iceland</option>
+																	<option value="IN">India</option>
+																	<option value="ID">Indonesia</option>
+																	<option value="IR">Iran (Islamic Republic of)</option>
+																	<option value="IQ">Iraq</option>
+																	<option value="IE">Ireland</option>
+																	<option value="IL">Israel</option>
+																	<option value="IT">Italy</option>
+																	<option value="JM">Jamaica</option>
+																	<option value="JP">Japan</option>
+																	<option value="JO">Jordan</option>
+																	<option value="KZ">Kazakhstan</option>
+																	<option value="KE">Kenya</option>
+																	<option value="KI">Kiribati</option>
+																	<option value="KP">Korea, Democratic People's Republic of</option>
+																	<option value="KR">Korea, Republic of</option>
+																	<option value="KW">Kuwait</option>
+																	<option value="KG">Kyrgyzstan</option>
+																	<option value="LA">Lao People's Democratic Republic</option>
+																	<option value="LV">Latvia</option>
+																	<option value="LB">Lebanon</option>
+																	<option value="LS">Lesotho</option>
+																	<option value="LR">Liberia</option>
+																	<option value="LY">Libyan Arab Jamahiriya</option>
+																	<option value="LI">Liechtenstein</option>
+																	<option value="LT">Lithuania</option>
+																	<option value="LU">Luxembourg</option>
+																	<option value="MO">Macau</option>
+																	<option value="MK">Macedonia, The Former Yugoslav Republic of</option>
+																	<option value="MG">Madagascar</option>
+																	<option value="MW">Malawi</option>
+																	<option value="MY">Malaysia</option>
+																	<option value="MV">Maldives</option>
+																	<option value="ML">Mali</option>
+																	<option value="MT">Malta</option>
+																	<option value="MH">Marshall Islands</option>
+																	<option value="MQ">Martinique</option>
+																	<option value="MR">Mauritania</option>
+																	<option value="MU">Mauritius</option>
+																	<option value="YT">Mayotte</option>
+																	<option value="MX">Mexico</option>
+																	<option value="FM">Micronesia, Federated States of</option>
+																	<option value="MD">Moldova, Republic of</option>
+																	<option value="MC">Monaco</option>
+																	<option value="MN">Mongolia</option>
+																	<option value="MS">Montserrat</option>
+                                                                                                                                        <option value="MA" selected>Morocco</option>
+																	<option value="MZ">Mozambique</option>
+																	<option value="MM">Myanmar</option>
+																	<option value="NA">Namibia</option>
+																	<option value="NR">Nauru</option>
+																	<option value="NP">Nepal</option>
+																	<option value="NL">Netherlands</option>
+																	<option value="AN">Netherlands Antilles</option>
+																	<option value="NC">New Caledonia</option>
+																	<option value="NZ">New Zealand</option>
+																	<option value="NI">Nicaragua</option>
+																	<option value="NE">Niger</option>
+																	<option value="NG">Nigeria</option>
+																	<option value="NU">Niue</option>
+																	<option value="NF">Norfolk Island</option>
+																	<option value="MP">Northern Mariana Islands</option>
+																	<option value="NO">Norway</option>
+																	<option value="OM">Oman</option>
+																	<option value="PK">Pakistan</option>
+																	<option value="PW">Palau</option>
+																	<option value="PA">Panama</option>
+																	<option value="PG">Papua New Guinea</option>
+																	<option value="PY">Paraguay</option>
+																	<option value="PE">Peru</option>
+																	<option value="PH">Philippines</option>
+																	<option value="PN">Pitcairn</option>
+																	<option value="PL">Poland</option>
+																	<option value="PT">Portugal</option>
+																	<option value="PR">Puerto Rico</option>
+																	<option value="QA">Qatar</option>
+																	<option value="RE">Reunion</option>
+																	<option value="RO">Romania</option>
+																	<option value="RU">Russian Federation</option>
+																	<option value="RW">Rwanda</option>
+																	<option value="KN">Saint Kitts and Nevis</option>
+																	<option value="LC">Saint LUCIA</option>
+																	<option value="VC">Saint Vincent and the Grenadines</option>
+																	<option value="WS">Samoa</option>
+																	<option value="SM">San Marino</option>
+																	<option value="ST">Sao Tome and Principe</option>
+																	<option value="SA">Saudi Arabia</option>
+																	<option value="SN">Senegal</option>
+																	<option value="SC">Seychelles</option>
+																	<option value="SL">Sierra Leone</option>
+																	<option value="SG">Singapore</option>
+																	<option value="SK">Slovakia (Slovak Republic)</option>
+																	<option value="SI">Slovenia</option>
+																	<option value="SB">Solomon Islands</option>
+																	<option value="SO">Somalia</option>
+																	<option value="ZA">South Africa</option>
+																	<option value="GS">South Georgia and the South Sandwich Islands</option>
+																	<option value="ES">Spain</option>
+																	<option value="LK">Sri Lanka</option>
+																	<option value="SH">St. Helena</option>
+																	<option value="PM">St. Pierre and Miquelon</option>
+																	<option value="SD">Sudan</option>
+																	<option value="SR">Suriname</option>
+																	<option value="SJ">Svalbard and Jan Mayen Islands</option>
+																	<option value="SZ">Swaziland</option>
+																	<option value="SE">Sweden</option>
+																	<option value="CH">Switzerland</option>
+																	<option value="SY">Syrian Arab Republic</option>
+																	<option value="TW">Taiwan, Province of China</option>
+																	<option value="TJ">Tajikistan</option>
+																	<option value="TZ">Tanzania, United Republic of</option>
+																	<option value="TH">Thailand</option>
+																	<option value="TG">Togo</option>
+																	<option value="TK">Tokelau</option>
+																	<option value="TO">Tonga</option>
+																	<option value="TT">Trinidad and Tobago</option>
+																	<option value="TN">Tunisia</option>
+																	<option value="TR">Turkey</option>
+																	<option value="TM">Turkmenistan</option>
+																	<option value="TC">Turks and Caicos Islands</option>
+																	<option value="TV">Tuvalu</option>
+																	<option value="UG">Uganda</option>
+																	<option value="UA">Ukraine</option>
+																	<option value="AE">United Arab Emirates</option>
+																	<option value="GB">United Kingdom</option>
+																	<option value="US">United States</option>
+																	<option value="UM">United States Minor Outlying Islands</option>
+																	<option value="UY">Uruguay</option>
+																	<option value="UZ">Uzbekistan</option>
+																	<option value="VU">Vanuatu</option>
+																	<option value="VE">Venezuela</option>
+																	<option value="VN">Viet Nam</option>
+																	<option value="VG">Virgin Islands (British)</option>
+																	<option value="VI">Virgin Islands (U.S.)</option>
+																	<option value="WF">Wallis and Futuna Islands</option>
+																	<option value="EH">Western Sahara</option>
+																	<option value="YE">Yemen</option>
+																	<option value="ZM">Zambia</option>
+																	<option value="ZW">Zimbabwe</option>
+																</select>
+															</div>
+														</div>
+														<div class="form-group">
+																<label class="control-label col-md-4">Numero CIN <span class="required">
+																* </span>
+																</label>
+																<div class="col-md-4">
+																	<input type="text" class="form-control" name="cin" placeholder="Entrez votre numéro CIN" required/>
+																</div>
+														</div>
+														<div class="form-group">
+															<label class="control-label col-md-4">Nom <span class="required">
+															* </span>
+															</label>
+															<div class="col-md-4">
+																<input type="text" class="form-control" placeholder="Entrez votre Nom" name="nom" required/>
+															</div>
+														</div>
+														<div class="form-group">
+															<label class="control-label col-md-4">Prénom <span class="required">
+															* </span>
+															</label>
+															<div class="col-md-4">
+																<input type="text" class="form-control" name="prenom" placeholder="Entrez votre Prénom " required/>
+															</div>
+														</div>
+														<div class="form-group">
+													<label class="control-label col-md-4">Date de naissance <span class="required">
+													* </span>
+													</label>
+													<div class="col-md-4">
+														<input type="text" placeholder="DD/MM/YYYY" maxlength="10" class="form-control" name="date_naiss" required/>
+														<span class="help-block">
+														e.g 11/11/2020 </span>
+													</div>
+												</div>
+														<div class="form-group">
+															<label class="control-label col-md-4">Sexe <span class="required">
+															* </span>
+															</label>
+															<div class="col-md-6">
+																<div class="radio-list">
+																	<label class="radio-inline">
+																	<input type="radio" name="sexe" value="M" data-title="Masculin"/>
+																	Masculin </label>
+																	<label class="radio-inline">
+																	<input type="radio" name="sexe" value="F" data-title="Feminin"/>
+																	Feminin </label>
+																</div>
+																<div id="form_gender_error">
+																</div>
+															</div>
+														</div>	
+													</div>
+													
+													<div class="form-group col-md-6 col-sm-12 ">
+														<div class="form-group">
+															<label class="control-label col-md-4">Situation familiale</label>
+															<div class="col-md-4">
+																<select name="situation" id="country_list" class="form-control">
+																	<option value=""></option>
+																	<option value="C">Celibataire</option>
+																	<option value="M">Marié(e)</option>
+																	<option value="D">Divorcé(e)</option>
+																	<option value="V">Veuf(ve)</option>
+																</select>
+															</div>
+														</div>
+														<div class="form-group">
+															<label class="control-label col-md-4">Numero CNE <span class="required">
+															* </span>
+															</label>
+															<div class="col-md-4">
+																<input type="text" class="form-control" name="cne" placeholder="Entrez votre numéro CNE"/>
+															</div>
+														</div>
+														<div class="form-group">
+															<label class="control-label col-md-4">Baccalauréat <span class="required">
+															* </span>
+															</label>
+															<div class="col-md-6">
+																<div class="radio-list">
+																	<label class="radio-inline">
+																	<input type="radio" name="bac" value="M" data-title="Marocain"/>
+																	Marocain </label>
+																	<label class="radio-inline">
+																	<input type="radio" name="bac" value="E" data-title="Etranger"/>
+																	Etranger </label>
+																</div>
+																<div id="form_gender_error">
+																</div>
+															</div>
+														</div>
+														<div class="form-group">
+															<label class="control-label col-md-4">Année du BAC <span class="required">
+															* </span>
+															</label>
+															<div class="col-md-4">
+																<input type="date" class="form-control" name="annee-bac" min="2005-01-01" max="2015-01-01"/>
+															</div>
+														</div>
+														<div class="form-group">
+															<label class="control-label col-md-4">Couverture Maladie <span class="required">
+															* </span>
+															</label>
+															<div class="col-md-6">
+																<div class="radio-list">
+																	<label class="radio-inline">
+																	<input type="radio" name="couverture" value="O" data-title="Oui"/>
+																	Oui </label>
+																	<label class="radio-inline">
+																	<input type="radio" name="couverture" value="N" data-title="Non"/>
+																	Non </label>
+																</div>
+																<div id="form_gender_error">
+																</div>
+															</div>
+														</div>
+														<div class="form-group">
+															<label class="control-label col-md-4">Régime </label>
+															<div class="col-md-4">
+																<select name="regime" id="regime_list" class="form-control">
+																	<option value=""></option>
+																	<option value="C">AMO CNSS</option>
+																	<option value="A">AMO </option>
+																</select>
+															</div>
+														</div>
+													</div>
+											</div>
+											<div class="tab-pane" id="tab2">
+												<h3 class="block">Résidence Etudiant</h3>
+												<div class="form-group">
+													<div class="form-group col-md-6 col-sm-12 ">
+														<div class="form-group">
+															<label class="control-label col-md-4">Adresse 1 <span class="required">
+															* </span>
+															</label>
+															<div class="col-md-4">
+															<input type="text" class="form-control" name="adresse1" placeholder="Saisir votre adresse "/>
+															</div>
+														</div>
+														<div class="form-group">
+															<label class="control-label col-md-4">Adresse 2
+															</label>
+															<div class="col-md-4">
+																<input type="text" class="form-control" name="adresse2"/>
+															</div>
+														</div>
+														<div class="form-group">
+															<label class="control-label col-md-4">GSM<span class="required">
+															* </span>
+															</label>
+															<div class="col-md-4">
+																<input type="tel" class="form-control" name="gsm" placeholder="Entrez votre numero GSM  " pattern="^((\+\d{1,3}(-| )?\(?\d\)?(-| )?\d{1,5})|(\(?\d{2,6}\)?))(-| )?(\d{3,4})(-| )?(\d{4})(( x| ext)\d{1,5}){0,1}$">
+															</div>
+														</div>
+														<div class="form-group">
+															<label class="control-label col-md-4">Compte bancaire<span class="required">
+															* </span>
+															</label>
+															<div class="col-md-4">
+																<input type="text" class="form-control" name="compte" placeholder="Entrez votre numeronde compte"/>
+															</div>
+														</div>
+													</div>
+													
+													<div class="form-group col-md-6 col-sm-12 ">
+														<div class="form-group">
+															<label class="control-label col-md-4"> Ville étudiant</label>
+															<div class="col-md-4">
+																<select name="ville" id="city_list" class="form-control">
+																	<option value=""></option>
+																	<option value="C">Cassablanca</option>
+																	<option value="R">Rabat</option>
+																</select>
+															</div>
+														</div>
+                                                                                                            <div class="form-group">
+															<label class="control-label col-md-4">Code postal <span class="required">
+															* </span>
+															</label>
+															<div class="col-md-4">
+																<input type="text" class="form-control" name="code_postal"/>
+															</div>
+														</div>
+														<div class="form-group">
+															<label class="control-label col-md-4">Email <span class="required">
+															* </span>
+															</label>
+															<div class="col-md-4">
+																<input type="email" class="form-control" name="mail"/>
+															</div>
+														</div>
+														<div class="form-group">
+															<label class="control-label col-md-4">Banque </label>
+															<div class="col-md-4">
+																<select name="banque" id="banque_list" class="form-control">
+																	<option value=""></option>
+																	<option value="C">Attijari Wafa Bank</option>
+																	<option value="M">Banque populaire</option>
+																	<option value="D">BMCI</option>
+																	<option value="V">BMCE</option>
+                                                                                                                                        <option value="V">CIH BANK</option>
+																</select>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="tab-pane" id="tab3">
+												<h3 class="block">Affiliation</h3>
+												<div class="form-group">
+													<div class="form-group col-md-6 col-sm-12 ">
+														<div class="form-group">
+															<label class="control-label col-md-4">Nom du père <span class="required">
+															* </span>
+															</label>
+															<div class="col-md-4">
+																<input type="text" class="form-control" name="nom_pere"/>
+															</div>
+														</div>
+														<div class="form-group">
+															<label class="control-label col-md-4">Prénom du père <span class="required">
+															* </span>
+															</label>
+															<div class="col-md-4">
+																<input type="text" class="form-control" name="prenom_pere"/>
+															</div>
+														</div>
+														<div class="form-group">
+															<label class="control-label col-md-4">CIN du père <span class="required">
+															* </span>
+															</label>
+															<div class="col-md-4">
+																<input type="text" class="form-control" name="cni_pere"/>
+															</div>
+														</div>
+                                                                                                            
+                                                                                                                <div class="form-group">
+                                                                                                                    <label class="control-label col-md-4">Date de naissance du père<span class="required">
+                                                                                                                    * </span>
+                                                                                                                    </label>
+                                                                                                                    <div class="col-md-4">
+                                                                                                                            <input type="text" placeholder="DD/MM/YYYY" maxlength="10" class="form-control" name="date_naiss_pere"/>
+                                                                                                                            <span class="help-block">
+                                                                                                                            e.g 11/11/2020 </span>
+                                                                                                                    </div>
+												                </div>
+                                                                                                            <div class="form-group">
+                                                                                                                    <label class="control-label col-md-4">Date décès du père<span class="required">
+                                                                                                                    * </span>
+                                                                                                                    </label>
+                                                                                                                    <div class="col-md-4">
+                                                                                                                            <input type="text" placeholder="DD/MM/YYYY" maxlength="10" class="form-control" name="date_dece_pere"/>
+                                                                                                                            <span class="help-block">
+                                                                                                                            e.g 11/11/2020 </span>
+                                                                                                                    </div>
+												                </div>														
+													</div>
 
-                                                <li>
-                                                    <a href="#tab6" data-toggle="tab" class="step">
-                                                        <span class="number">
-                                                            6 </span>
-                                                        <span class="desc">
-                                                            <i class="fa fa-check"></i> Validation </span>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                            <div id="bar" class="progress progress-striped" role="progressbar">
-                                                <div class="progress-bar progress-bar-success">
-                                                </div>
-                                            </div>
-                                            <div class="tab-content">
-                                                <div class="alert alert-danger display-none">
-                                                    <button class="close" data-dismiss="alert"></button>
-                                                    You have some form errors. Please check below.
-                                                </div>
-                                                <div class="alert alert-success display-none">
-                                                    <button class="close" data-dismiss="alert"></button>
-                                                    Your form validation is successful!
-                                                </div>
-                                                <div class="tab-pane active" id="tab1">
-                                                    <h3 class="block">Veuillez entrer vos informations</h3>
+													<div class="form-group col-md-6 col-sm-12 ">
+														<div class="form-group">
+															<label class="control-label col-md-4">Nom du mère <span class="required">
+															* </span>
+															</label>
+															<div class="col-md-4">
+																<input type="text" class="form-control" name="nom_mere"/>
+															</div>
+														</div>
+														<div class="form-group">
+															<label class="control-label col-md-4">Prénom de la mère <span class="required">
+															* </span>
+															</label>
+															<div class="col-md-4">
+																<input type="text" class="form-control" name="prenom_mere" required/>
+															</div>
+														</div>
+														<div class="form-group">
+															<label class="control-label col-md-4">CIN de la mère <span class="required">
+															* </span>
+															</label>
+															<div class="col-md-4">
+																<input type="text" class="form-control" name="cni_mere"/>
+															</div>
+														</div>
+                                                                                                            <div class="form-group">
+                                                                                                                    <label class="control-label col-md-4">Date naissance de la mère<span class="required">
+                                                                                                                    * </span>
+                                                                                                                    </label>
+                                                                                                                    <div class="col-md-4">
+                                                                                                                            <input type="text" placeholder="DD/MM/YYYY" maxlength="10" class="form-control" name="date_naiss_mere"/>
+                                                                                                                            <span class="help-block">
+                                                                                                                            e.g 11/11/2020 </span>
+                                                                                                                    </div>
+												                </div>	
+                                                                                                            <div class="form-group">
+                                                                                                                    <label class="control-label col-md-4">Date décès de la mère<span class="required">
+                                                                                                                    * </span>
+                                                                                                                    </label>
+                                                                                                                    <div class="col-md-4">
+                                                                                                                            <input type="text" placeholder="DD/MM/YYYY" maxlength="10" class="form-control" name="date_dece_mere"/>
+                                                                                                                            <span class="help-block">
+                                                                                                                            e.g 11/11/2020 </span>
+                                                                                                                    </div>
+												                </div>														
+													</div>
+													
+													<div class="form-group col-md-6 col-sm-12 ">
+													</div>
+												</div>
+											</div>
+											
+											<div class="tab-pane" id="tab4">
+												<h3 class="block">Etablissement scolaire</h3>
+												<div class="form-group">
+													<div class="form-group col-md-6 col-sm-12 ">
+														<div class="form-group">
+															<label class="control-label col-md-4">Etablissement scolaire </label>
+															<div class="col-md-4">
+																<select name="etablissement" id="banque_list" class="form-control">
+																	<option value=""></option>
+																	<option value="C">EMI</option>
+																	<option value="M">INPT</option>
+																	<option value="D">UNIVERSITE MOHAMED V</option>
+																	<option value="V">ESTEM</option>
+																</select>
+															</div>
+														</div>
+														<div class="form-group">
+															<label class="control-label col-md-4">Facultés</label>
+															<div class="col-md-4">
+																<select name="fac" id="banque_list" class="form-control">
+																	<option value=""></option>
+																	<option value="C">FAC 1</option>
+																	<option value="M">FAC 2</option>
+																	<option value="D">FAC 3</option>
+																</select>
+															</div>
+														</div>
+														<div class="form-group">
+															<label class="control-label col-md-4">Filières/Spécialités </label>
+															<div class="col-md-4">
+																<select name="filiere" id="banque_list" class="form-control">
+																	<option value=""></option>
+																	<option value="C">Economie</option>
+																	<option value="M">Sociologie</option>
+																	<option value="D">Pharmacie</option>
+																	<option value="V">Géologie</option>
+																</select>
+															</div>
+														</div>
+														<div class="form-group">
+															<label class="control-label col-md-4">Ville </label>
+															<div class="col-md-4">
+																<select name="ville" id="banque_list" class="form-control">
+																	<option value=""></option>
+																	<option value="C">Casablanca</option>
+																	<option value="M">Mohamedia</option>
+																	<option value="D">Rabat</option>
+																	<option value="V">Marrakech</option>
+																</select>
+															</div>
+														</div>											
+													</div>
+													
+													<div class="form-group col-md-6 col-sm-12 ">
+														<div class="form-group">
+															<label class="control-label col-md-4">Date d'inscription <span class="required">
+															* </span>
+															</label>
+															<div class="col-md-4">
+																<input type="date" class="form-control" name="inscription" min="2005-01-01" max="2015-01-01"/>
+															</div>
+														</div>
+														<div class="form-group">
+															<label class="control-label col-md-4">Année universitaire <span class="required">
+															* </span>
+															</label>
+															<div class="col-md-4">
+																<input type="text" class="form-control" name="annee"/>
+															</div>
+														</div>
 
-                                                    <div class="form-group col-md-6 col-sm-12 ">
-                                                        <div class="form-group">
-                                                            <label class="control-label col-md-4">Vous êtes? <span class="required">
-                                                                    * </span>
-                                                            </label>
-                                                            <div class="col-md-6">
-                                                                <div class="radio-list">
-                                                                    <label class="radio-inline">
-                                                                        <input type="radio" name="origine" value="M" data-title="Marocain"/>
-                                                                        Marocain </label>
-                                                                    <label class="radio-inline">
-                                                                        <input type="radio" name="origine" value="E" data-title="Etranger"/>
-                                                                        Etranger </label>
-                                                                </div>
-                                                                <div id="form_gender_error">
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group">
-                                                            <label class="control-label col-md-4">Numero CIN <span class="required">
-                                                                    * </span>
-                                                            </label>
-                                                            <div class="col-md-4">
-                                                                <input type="text" class="form-control" name="cin" placeholder="Entrez votre CIN"/>
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group">
-                                                            <label class="control-label col-md-4">Nom <span class="required">
-                                                                    * </span>
-                                                            </label>
-                                                            <div class="col-md-4">
-                                                                <input type="text" class="form-control" name="nom" placeholder="Entrez votre Nom"/>
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group">
-                                                            <label class="control-label col-md-4">Prénom <span class="required">
-                                                                    * </span>
-                                                            </label>
-                                                            <div class="col-md-4">
-                                                                <input type="text" class="form-control" name="prenom" placeholder="Entrez votre Prénom "/>
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group">
-                                                            <label class="control-label col-md-4">Date de naissance <span class="required">
-                                                                    * </span>
-                                                            </label>
-                                                            <div class="col-md-4">
-                                                                <input type="text" placeholder="DD/MM/YYYY" maxlength="10" class="form-control" name="date_naiss"/>
-                                                                <span class="help-block">
-                                                                    e.g 23/11/2020 </span>
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group">
-                                                            <label class="control-label col-md-4">Sexe <span class="required">
-                                                                    * </span>
-                                                            </label>
-                                                            <div class="col-md-6">
-                                                                <div class="radio-list">
-                                                                    <label class="radio-inline">
-                                                                        <input type="radio" name="gender" value="M" data-title="Masculin"/>
-                                                                        Masculin </label>
-                                                                    <label class="radio-inline">
-                                                                        <input type="radio" name="sexe" value="F" data-title="Feminin"/>
-                                                                        Feminin </label>
-                                                                </div>
-                                                                <div id="form_gender_error">
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group">
-                                                            <label class="control-label col-md-4">Pays d'origine</label>
-                                                            <div class="col-md-4">
-                                                                <select name="country" id="country_list" class="form-control">
-                                                                    <option value=""></option>
-                                                                    <option value="AF">Afghanistan</option>
-                                                                    <option value="AL">Albania</option>
-                                                                    <option value="DZ">Algeria</option>
-                                                                    <option value="AS">American Samoa</option>
-                                                                    <option value="AD">Andorra</option>
-                                                                    <option value="AO">Angola</option>
-                                                                    <option value="AI">Anguilla</option>
-                                                                    <option value="AR">Argentina</option>
-                                                                    <option value="AM">Armenia</option>
-                                                                    <option value="AW">Aruba</option>
-                                                                    <option value="AU">Australia</option>
-                                                                    <option value="AT">Austria</option>
-                                                                    <option value="AZ">Azerbaijan</option>
-                                                                    <option value="BS">Bahamas</option>
-                                                                    <option value="BH">Bahrain</option>
-                                                                    <option value="BD">Bangladesh</option>
-                                                                    <option value="BB">Barbados</option>
-                                                                    <option value="BY">Belarus</option>
-                                                                    <option value="BE">Belgium</option>
-                                                                    <option value="BZ">Belize</option>
-                                                                    <option value="BJ">Benin</option>
-                                                                    <option value="BM">Bermuda</option>
-                                                                    <option value="BT">Bhutan</option>
-                                                                    <option value="BO">Bolivia</option>
-                                                                    <option value="BA">Bosnia and Herzegowina</option>
-                                                                    <option value="BW">Botswana</option>
-                                                                    <option value="BV">Bouvet Island</option>
-                                                                    <option value="BR">Brazil</option>
-                                                                    <option value="IO">British Indian Ocean Territory</option>
-                                                                    <option value="BN">Brunei Darussalam</option>
-                                                                    <option value="BG">Bulgaria</option>
-                                                                    <option value="BF">Burkina Faso</option>
-                                                                    <option value="BI">Burundi</option>
-                                                                    <option value="KH">Cambodia</option>
-                                                                    <option value="CM">Cameroon</option>
-                                                                    <option value="CA">Canada</option>
-                                                                    <option value="CV">Cape Verde</option>
-                                                                    <option value="KY">Cayman Islands</option>
-                                                                    <option value="CF">Central African Republic</option>
-                                                                    <option value="TD">Chad</option>
-                                                                    <option value="CL">Chile</option>
-                                                                    <option value="CN">China</option>
-                                                                    <option value="CX">Christmas Island</option>
-                                                                    <option value="CC">Cocos (Keeling) Islands</option>
-                                                                    <option value="CO">Colombia</option>
-                                                                    <option value="KM">Comoros</option>
-                                                                    <option value="CG">Congo</option>
-                                                                    <option value="CD">Congo, the Democratic Republic of the</option>
-                                                                    <option value="CK">Cook Islands</option>
-                                                                    <option value="CR">Costa Rica</option>
-                                                                    <option value="CI">Cote d'Ivoire</option>
-                                                                    <option value="HR">Croatia (Hrvatska)</option>
-                                                                    <option value="CU">Cuba</option>
-                                                                    <option value="CY">Cyprus</option>
-                                                                    <option value="CZ">Czech Republic</option>
-                                                                    <option value="DK">Denmark</option>
-                                                                    <option value="DJ">Djibouti</option>
-                                                                    <option value="DM">Dominica</option>
-                                                                    <option value="DO">Dominican Republic</option>
-                                                                    <option value="EC">Ecuador</option>
-                                                                    <option value="EG">Egypt</option>
-                                                                    <option value="SV">El Salvador</option>
-                                                                    <option value="GQ">Equatorial Guinea</option>
-                                                                    <option value="ER">Eritrea</option>
-                                                                    <option value="EE">Estonia</option>
-                                                                    <option value="ET">Ethiopia</option>
-                                                                    <option value="FK">Falkland Islands (Malvinas)</option>
-                                                                    <option value="FO">Faroe Islands</option>
-                                                                    <option value="FJ">Fiji</option>
-                                                                    <option value="FI">Finland</option>
-                                                                    <option value="FR">France</option>
-                                                                    <option value="GF">French Guiana</option>
-                                                                    <option value="PF">French Polynesia</option>
-                                                                    <option value="TF">French Southern Territories</option>
-                                                                    <option value="GA">Gabon</option>
-                                                                    <option value="GM">Gambia</option>
-                                                                    <option value="GE">Georgia</option>
-                                                                    <option value="DE">Germany</option>
-                                                                    <option value="GH">Ghana</option>
-                                                                    <option value="GI">Gibraltar</option>
-                                                                    <option value="GR">Greece</option>
-                                                                    <option value="GL">Greenland</option>
-                                                                    <option value="GD">Grenada</option>
-                                                                    <option value="GP">Guadeloupe</option>
-                                                                    <option value="GU">Guam</option>
-                                                                    <option value="GT">Guatemala</option>
-                                                                    <option value="GN">Guinea</option>
-                                                                    <option value="GW">Guinea-Bissau</option>
-                                                                    <option value="GY">Guyana</option>
-                                                                    <option value="HT">Haiti</option>
-                                                                    <option value="HM">Heard and Mc Donald Islands</option>
-                                                                    <option value="VA">Holy See (Vatican City State)</option>
-                                                                    <option value="HN">Honduras</option>
-                                                                    <option value="HK">Hong Kong</option>
-                                                                    <option value="HU">Hungary</option>
-                                                                    <option value="IS">Iceland</option>
-                                                                    <option value="IN">India</option>
-                                                                    <option value="ID">Indonesia</option>
-                                                                    <option value="IR">Iran (Islamic Republic of)</option>
-                                                                    <option value="IQ">Iraq</option>
-                                                                    <option value="IE">Ireland</option>
-                                                                    <option value="IL">Israel</option>
-                                                                    <option value="IT">Italy</option>
-                                                                    <option value="JM">Jamaica</option>
-                                                                    <option value="JP">Japan</option>
-                                                                    <option value="JO">Jordan</option>
-                                                                    <option value="KZ">Kazakhstan</option>
-                                                                    <option value="KE">Kenya</option>
-                                                                    <option value="KI">Kiribati</option>
-                                                                    <option value="KP">Korea, Democratic People's Republic of</option>
-                                                                    <option value="KR">Korea, Republic of</option>
-                                                                    <option value="KW">Kuwait</option>
-                                                                    <option value="KG">Kyrgyzstan</option>
-                                                                    <option value="LA">Lao People's Democratic Republic</option>
-                                                                    <option value="LV">Latvia</option>
-                                                                    <option value="LB">Lebanon</option>
-                                                                    <option value="LS">Lesotho</option>
-                                                                    <option value="LR">Liberia</option>
-                                                                    <option value="LY">Libyan Arab Jamahiriya</option>
-                                                                    <option value="LI">Liechtenstein</option>
-                                                                    <option value="LT">Lithuania</option>
-                                                                    <option value="LU">Luxembourg</option>
-                                                                    <option value="MO">Macau</option>
-                                                                    <option value="MK">Macedonia, The Former Yugoslav Republic of</option>
-                                                                    <option value="MG">Madagascar</option>
-                                                                    <option value="MW">Malawi</option>
-                                                                    <option value="MY">Malaysia</option>
-                                                                    <option value="MV">Maldives</option>
-                                                                    <option value="ML">Mali</option>
-                                                                    <option value="MT">Malta</option>
-                                                                    <option value="MH">Marshall Islands</option>
-                                                                    <option value="MQ">Martinique</option>
-                                                                    <option value="MR">Mauritania</option>
-                                                                    <option value="MU">Mauritius</option>
-                                                                    <option value="YT">Mayotte</option>
-                                                                    <option value="MX">Mexico</option>
-                                                                    <option value="FM">Micronesia, Federated States of</option>
-                                                                    <option value="MD">Moldova, Republic of</option>
-                                                                    <option value="MC">Monaco</option>
-                                                                    <option value="MN">Mongolia</option>
-                                                                    <option value="MS">Montserrat</option>
-                                                                    <option value="MA">Morocco</option>
-                                                                    <option value="MZ">Mozambique</option>
-                                                                    <option value="MM">Myanmar</option>
-                                                                    <option value="NA">Namibia</option>
-                                                                    <option value="NR">Nauru</option>
-                                                                    <option value="NP">Nepal</option>
-                                                                    <option value="NL">Netherlands</option>
-                                                                    <option value="AN">Netherlands Antilles</option>
-                                                                    <option value="NC">New Caledonia</option>
-                                                                    <option value="NZ">New Zealand</option>
-                                                                    <option value="NI">Nicaragua</option>
-                                                                    <option value="NE">Niger</option>
-                                                                    <option value="NG">Nigeria</option>
-                                                                    <option value="NU">Niue</option>
-                                                                    <option value="NF">Norfolk Island</option>
-                                                                    <option value="MP">Northern Mariana Islands</option>
-                                                                    <option value="NO">Norway</option>
-                                                                    <option value="OM">Oman</option>
-                                                                    <option value="PK">Pakistan</option>
-                                                                    <option value="PW">Palau</option>
-                                                                    <option value="PA">Panama</option>
-                                                                    <option value="PG">Papua New Guinea</option>
-                                                                    <option value="PY">Paraguay</option>
-                                                                    <option value="PE">Peru</option>
-                                                                    <option value="PH">Philippines</option>
-                                                                    <option value="PN">Pitcairn</option>
-                                                                    <option value="PL">Poland</option>
-                                                                    <option value="PT">Portugal</option>
-                                                                    <option value="PR">Puerto Rico</option>
-                                                                    <option value="QA">Qatar</option>
-                                                                    <option value="RE">Reunion</option>
-                                                                    <option value="RO">Romania</option>
-                                                                    <option value="RU">Russian Federation</option>
-                                                                    <option value="RW">Rwanda</option>
-                                                                    <option value="KN">Saint Kitts and Nevis</option>
-                                                                    <option value="LC">Saint LUCIA</option>
-                                                                    <option value="VC">Saint Vincent and the Grenadines</option>
-                                                                    <option value="WS">Samoa</option>
-                                                                    <option value="SM">San Marino</option>
-                                                                    <option value="ST">Sao Tome and Principe</option>
-                                                                    <option value="SA">Saudi Arabia</option>
-                                                                    <option value="SN">Senegal</option>
-                                                                    <option value="SC">Seychelles</option>
-                                                                    <option value="SL">Sierra Leone</option>
-                                                                    <option value="SG">Singapore</option>
-                                                                    <option value="SK">Slovakia (Slovak Republic)</option>
-                                                                    <option value="SI">Slovenia</option>
-                                                                    <option value="SB">Solomon Islands</option>
-                                                                    <option value="SO">Somalia</option>
-                                                                    <option value="ZA">South Africa</option>
-                                                                    <option value="GS">South Georgia and the South Sandwich Islands</option>
-                                                                    <option value="ES">Spain</option>
-                                                                    <option value="LK">Sri Lanka</option>
-                                                                    <option value="SH">St. Helena</option>
-                                                                    <option value="PM">St. Pierre and Miquelon</option>
-                                                                    <option value="SD">Sudan</option>
-                                                                    <option value="SR">Suriname</option>
-                                                                    <option value="SJ">Svalbard and Jan Mayen Islands</option>
-                                                                    <option value="SZ">Swaziland</option>
-                                                                    <option value="SE">Sweden</option>
-                                                                    <option value="CH">Switzerland</option>
-                                                                    <option value="SY">Syrian Arab Republic</option>
-                                                                    <option value="TW">Taiwan, Province of China</option>
-                                                                    <option value="TJ">Tajikistan</option>
-                                                                    <option value="TZ">Tanzania, United Republic of</option>
-                                                                    <option value="TH">Thailand</option>
-                                                                    <option value="TG">Togo</option>
-                                                                    <option value="TK">Tokelau</option>
-                                                                    <option value="TO">Tonga</option>
-                                                                    <option value="TT">Trinidad and Tobago</option>
-                                                                    <option value="TN">Tunisia</option>
-                                                                    <option value="TR">Turkey</option>
-                                                                    <option value="TM">Turkmenistan</option>
-                                                                    <option value="TC">Turks and Caicos Islands</option>
-                                                                    <option value="TV">Tuvalu</option>
-                                                                    <option value="UG">Uganda</option>
-                                                                    <option value="UA">Ukraine</option>
-                                                                    <option value="AE">United Arab Emirates</option>
-                                                                    <option value="GB">United Kingdom</option>
-                                                                    <option value="US">United States</option>
-                                                                    <option value="UM">United States Minor Outlying Islands</option>
-                                                                    <option value="UY">Uruguay</option>
-                                                                    <option value="UZ">Uzbekistan</option>
-                                                                    <option value="VU">Vanuatu</option>
-                                                                    <option value="VE">Venezuela</option>
-                                                                    <option value="VN">Viet Nam</option>
-                                                                    <option value="VG">Virgin Islands (British)</option>
-                                                                    <option value="VI">Virgin Islands (U.S.)</option>
-                                                                    <option value="WF">Wallis and Futuna Islands</option>
-                                                                    <option value="EH">Western Sahara</option>
-                                                                    <option value="YE">Yemen</option>
-                                                                    <option value="ZM">Zambia</option>
-                                                                    <option value="ZW">Zimbabwe</option>
-                                                                </select>
-                                                            </div>
-
-                                                        </div>
-
-                                                    </div>
-
-                                                    <div class="form-group col-md-6 col-sm-12 ">
-
-                                                        <div class="form-group">
-                                                            <label class="control-label col-md-4">Situation familiale</label>
-                                                            <div class="col-md-4">
-                                                                <select name="situation" id="country_list" class="form-control">
-                                                                    <option value=""></option>
-                                                                    <option value="C">Célibataire</option>
-                                                                    <option value="M">Marié(e)</option>
-                                                                    <option value="D">Divorcé(e)</option>
-                                                                    <option value="V">Veuf(ve)</option>
-                                                                </select>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="form-group">
-                                                            <label class="control-label col-md-4">Numero CNE <span class="required">
-                                                                    * </span>
-                                                            </label>
-                                                            <div class="col-md-4">
-                                                                <input type="number" class="form-control" name="cne" placeholder="Entrez votre numéro CNE"/>
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group">
-                                                            <label class="control-label col-md-4">Baccalauréat <span class="required">
-                                                                    * </span>
-                                                            </label>
-                                                            <div class="col-md-6">
-                                                                <div class="radio-list">
-                                                                    <label class="radio-inline">
-                                                                        <input type="radio" name="bac" value="M" data-title="Marocain"/>
-                                                                        Marocain </label>
-                                                                    <label class="radio-inline">
-                                                                        <input type="radio" name="bac" value="E" data-title="Etranger"/>
-                                                                        Etranger </label>
-                                                                </div>
-                                                                <div id="form_gender_error">
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group">
-                                                            <label class="control-label col-md-4">Année du BAC <span class="required">
-                                                                    * </span>
-                                                            </label>
-                                                            <div class="col-md-4">
-                                                                <input type="date" class="form-control" name="annee-bac" min="2005-01-01" max="2015-01-01"/>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="form-group">
-                                                            <label class="control-label col-md-4">Couverture Maladie <span class="required">
-                                                                    * </span>
-                                                            </label>
-                                                            <div class="col-md-6">
-                                                                <div class="radio-list">
-                                                                    <label class="radio-inline">
-                                                                        <input type="radio" name="couverture" value="O" data-title="Oui"/>
-                                                                        Oui </label>
-                                                                    <label class="radio-inline">
-                                                                        <input type="radio" name="couverture" value="N" data-title="Non"/>
-                                                                        Non </label>
-                                                                </div>
-                                                                <div id="form_gender_error">
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group">
-                                                            <label class="control-label col-md-4">Régime       </label>
-                                                            <div class="col-md-4">
-                                                                <select name="regime" id="country_list" class="form-control">
-                                                                    <option value=""></option>
-                                                                    <option value="C">AMO CNSS</option>
-                                                                    <option value="A">AMO </option>
-                                                                </select>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="tab-pane" id="tab2">
-                                                    <h3 class="block">Provide your profile details</h3>
-
-                                                    <div class="form-group col-md-6 col-sm-12">
-                                                        <div class="form-group">
-                                                            <label class="control-label col-md-4">Adresse 1 <span class="required">
-                                                                    * </span>
-                                                            </label>
-                                                            <div class="col-md-4">
-                                                                <input type="text" class="form-control" name="adresse1" placeholder="Saisir votre adresse"/>
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group">
-                                                            <label class="control-label col-md-4">Adresse 2
-                                                            </label>
-                                                            <div class="col-md-4">
-                                                                <input type="text" class="form-control" name="adresse2"/>
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group">
-                                                            <label class="control-label col-md-4">GSM<span class="required">
-                                                                    * </span>
-                                                            </label>
-                                                            <div class="col-md-4">
-                                                                <input type="tel" class="form-control" name="gsm" placeholder="Entrez votre numero GSM" pattern="^((\+\d{1,3}(-| )?\(?\d\)?(-| )?\d{1,5})|(\(?\d{2,6}\)?))(-| )?(\d{3,4})(-| )?(\d{4})(( x| ext)\d{1,5}){0,1}$">
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group">
-                                                            <label class="control-label col-md-4">Compte bancaire<span class="required">
-                                                                    * </span>
-                                                            </label>
-                                                            <div class="col-md-4">
-                                                                <input type="text" class="form-control" name="compte" placeholder="Entrez votre numeronde compte"/>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="form-group col-md-6 col-md-6">
-
-                                                        <div class="form-group">
-                                                            <label class="control-label col-md-4"> Ville étudiant</label>
-                                                            <div class="col-md-4">
-                                                                <select name="ville" id="city_list" class="form-control">
-                                                                    <option value=""></option>
-                                                                    <option value="C">Cassablanca</option>
-                                                                    <option value="R">Rabat</option>
-                                                                </select>
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group">
-                                                            <label class="control-label col-md-4">Code postal</label>
-                                                            <div class="col-md-4">
-                                                                <select name="code" id="city_list" class="form-control">
-                                                                    <option value=""></option>
-                                                                    <option value="C">Cassablanca</option>
-                                                                    <option value="R">Rabat</option>
-                                                                </select>
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group">
-                                                            <label class="control-label col-md-4">Email <span class="required">
-                                                                    * </span>
-                                                            </label>
-                                                            <div class="col-md-4">
-                                                                <input type="email" class="form-control" name="mail"/>
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group">
-                                                            <label class="control-label col-md-4">Banque </label>
-                                                            <div class="col-md-4">
-                                                                <select name="banque" id="banque_list" class="form-control">
-                                                                    <option value=""></option>
-                                                                    <option value="C">ABW</option>
-                                                                    <option value="M">ACA</option>
-                                                                    <option value="D">PWA(e)</option>
-                                                                    <option value="V">ATT</option>
-                                                                </select>
-                                                            </div>
-                                                        </div>
-
-                                                    </div>
-
-                                                </div>
-                                                <div class="tab-pane" id="tab3">
-                                                    <h3 class="block">Affiliation (si marocain ou étranger avec parents résidents)</h3>
-
-                                                    <div class="form-group col-md-6 col-sm-12">
-                                                        <div class="form-group">
-                                                            <label class="control-label col-md-4">Nom du père <span class="required">
-                                                                    * </span>
-                                                            </label>
-                                                            <div class="col-md-4">
-                                                                <input type="text" class="form-control" name="nom-pere"/>
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group">
-                                                            <label class="control-label col-md-4">Prénom du père <span class="required">
-                                                                    * </span>
-                                                            </label>
-                                                            <div class="col-md-4">
-                                                                <input type="text" class="form-control" name="prenom-pere"/>
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group">
-                                                            <label class="control-label col-md-4">CIN du père <span class="required">
-                                                                    * </span>
-                                                            </label>
-                                                            <div class="col-md-4">
-                                                                <input type="text" class="form-control" name="prenom-pere"/>
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group">
-                                                            <label class="control-label col-md-4">Date de naissance du père <span class="required">
-                                                                    * </span>
-                                                            </label>
-                                                            <div class="col-md-4">
-                                                                <input type="date" class="form-control" name="naisssance-pere" min="1950-01-01" max="2016-01-01"/>
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group">
-                                                            <label class="control-label col-md-4">Date décès  du père <span class="required">
-                                                                    * </span>
-                                                            </label>
-                                                            <div class="col-md-4">
-                                                                <input type="date" class="form-control" name="deces-pere" min="1990-01-01" max="2016-01-01"/>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-
-                                                    <div class="form-group col-md-6 col-sm-12">
-
-                                                        <div class="form-group">
-                                                            <label class="control-label col-md-4">Nom de la mère <span class="required">
-                                                                    * </span>
-                                                            </label>
-                                                            <div class="col-md-4">
-                                                                <input type="text" class="form-control" name="nom-mere"/>
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group">
-                                                            <label class="control-label col-md-4">Prénom de la mère <span class="required">
-                                                                    * </span>
-                                                            </label>
-                                                            <div class="col-md-4">
-                                                                <input type="text" class="form-control" name="prenom-mere"/>
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group">
-                                                            <label class="control-label col-md-4">CIN de la mère <span class="required">
-                                                                    * </span>
-                                                            </label>
-                                                            <div class="col-md-4">
-                                                                <input type="text" class="form-control" name="prenom-mere"/>
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group">
-                                                            <label class="control-label col-md-4">Date de naissance de la mère <span class="required">
-                                                                    * </span>
-                                                            </label>
-                                                            <div class="col-md-4">
-                                                                <input type="date" class="form-control" name="naissance-mere" min="1990-01-md-31" max="2016-1-31"/>
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group">
-                                                            <label class="control-label col-md-4">Date décès  de la mère <span class="required">
-                                                                    * </span>
-                                                            </label>
-                                                            <div class="col-md-4">
-                                                                <input type="date" class="form-control" name="deces-mere" min="1990-01-31" max="2016-1-31"/>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="tab-pane" id="tab4">
-                                                    <h3 class="block">Etablissement scolaire</h3>
-
-                                                    <div class="form-group col-md-6 col-sm-12">
-                                                        <div class="form-group">
-                                                            <label class="control-label col-md-4">Etablissement scolaire </label>
-                                                            <div class="col-md-4">
-                                                                <select name="banque" id="banque_list" class="form-control">
-                                                                    <option value=""></option>
-                                                                    <option value="C">EMI</option>
-                                                                    <option value="M">INPT</option>
-                                                                    <option value="D">UNIVERSITE MOHAMED V</option>
-                                                                    <option value="V">ESTEM</option>
-                                                                </select>
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group">
-                                                            <label class="control-label col-md-4">Facultés</label>
-                                                            <div class="col-md-4">
-                                                                <select name="banque" id="banque_list" class="form-control">
-                                                                    <option value=""></option>
-                                                                    <option value="C">FAC 1</option>
-                                                                    <option value="M">FAC 2</option>
-                                                                    <option value="D">FAC 3</option>
-                                                                </select>
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group">
-                                                            <label class="control-label col-md-4">Filières/Spécialités </label>
-                                                            <div class="col-md-4">
-                                                                <select name="banque" id="banque_list" class="form-control">
-                                                                    <option value=""></option>
-                                                                    <option value="C">Economie</option>
-                                                                    <option value="M">Sociologie</option>
-                                                                    <option value="D">Pharmacie</option>
-                                                                    <option value="V">Géologie</option>
-                                                                </select>
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group">
-                                                            <label class="control-label col-md-4">Ville </label>
-                                                            <div class="col-md-4">
-                                                                <select name="banque" id="banque_list" class="form-control">
-                                                                    <option value=""></option>
-                                                                    <option value="C">Casablanca</option>
-                                                                    <option value="M">Mohamedia</option>
-                                                                    <option value="D">Rabat</option>
-                                                                    <option value="V">Marrakech</option>
-                                                                </select>
-                                                            </div>
-                                                        </div>
-
-                                                    </div>
-
-                                                    <div class="form-group col-md-6 col-md-6">
-                                                        <div class="form-group">
-                                                            <label class="control-label col-md-4">Date d'inscription <span class="required">
-                                                                    * </span>
-                                                            </label>
-                                                            <div class="col-md-4">
-                                                                <input type="date" class="form-control" name="inscription" min="2005-01-01" max="2015-01-01"/>
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group">
-                                                            <label class="control-label col-md-4">Année universitaire <span class="required">
-                                                                    * </span>
-                                                            </label>
-                                                            <div class="col-md-4">
-                                                                <input type="text" class="form-control" name="annee"/>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="form-group">
-                                                            <label class="control-label col-md-4">Niveau<span class="required">
-                                                                    * </span>
-                                                            </label>
-                                                            <div class="col-md-4">
-                                                                <input type="text" class="form-control" name="annee"/>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-                                                </div>
-
-                                                <div class="tab-pane" id="tab5">
-                                                    <h3 class="block">Etat Civil</h3>
-
-                                                    <div class="form-group col-md-6 col-sm-12">
-                                                        <div class="form-group">
-                                                            <label class="control-label col-md-4">CIN du Conjoint<span class="required">
-                                                                    * </span>
-                                                            </label>
-                                                            <div class="col-md-4">
-                                                                <input type="text" class="form-control" name="annee"/>
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group">
-                                                            <label class="control-label col-md-4">Date de mariage <span class="required">
-                                                                    * </span>
-                                                            </label>
-                                                            <div class="col-md-4">
-                                                                <input type="date" class="form-control" name="inscription" min="2005-01-01" max="2015-01-01"/>
-                                                            </div>
-                                                        </div>
-
-                                                    </div>
-
-
-                                                    <div class="form-group col-md-6 col-md-6">
-                                                        <div class="form-group">
-                                                            <label class="control-label col-md-4">Date de divorce <span class="required">
-                                                                    * </span>
-                                                            </label>
-                                                            <div class="col-md-4">
-                                                                <input type="date" class="form-control" name="divorce" min="1990-01-31" max="2016-01-31"/>
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group">
-                                                            <label class="control-label col-md-4">Date de deceès <span class="required">
-                                                                    * </span>
-                                                            </label>
-                                                            <div class="col-md-4">
-                                                                <input type="date" class="form-control" name="deces" min="1990-01-01" max="2016-01-31"/>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="tab-pane" id="tab6">
-                                                    <h3 class="block">Confirmez vos informations</h3>
-                                                    <h4 class="form-section">Identité Etudiant</h4>
-
-                                                    <div class="col-md-6">
-                                                        <div class="form-group">
-                                                            <label class="control-label col-md-4">Numero CIN:</label>
-                                                            <div class="col-md-4">
-                                                                <p class="form-control-static" data-display="cin">
-                                                                </p>
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group">
-                                                            <label class="control-label col-md-4">Nom:</label>
-                                                            <div class="col-md-4">
-                                                                <p class="form-control-static" data-display="nom">
-                                                                </p>
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group">
-                                                            <label class="control-label col-md-4">Prenom:</label>
-                                                            <div class="col-md-4">
-                                                                <p class="form-control-static" data-display="prenom">
-                                                                </p>
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group">
-                                                            <label class="control-label col-md-4">Date de naissance :</label>
-                                                            <div class="col-md-4">
-                                                                <p class="form-control-static" data-display="date_naiss">
-                                                                </p>
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group">
-                                                            <label class="control-label col-md-4">Sexe :</label>
-                                                            <div class="col-md-4">
-                                                                <p class="form-control-static" data-display="sexe">
-                                                                </p>
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group">
-                                                            <label class="control-label col-md-4">Situation familiale:</label>
-                                                            <div class="col-md-4">
-                                                                <p class="form-control-static" data-display="situation">
-                                                                </p>
-                                                            </div>
-                                                        </div>	
-                                                        <div class="form-group">
-                                                            <label class="control-label col-md-4"> Pays d'origine:</label>
-                                                            <div class="col-md-4">
-                                                                <p class="form-control-static" data-display="country">
-                                                                </p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-6">
-                                                        <div class="form-group">
-                                                            <label class="control-label col-md-4">Numero CNE:</label>
-                                                            <div class="col-md-4">
-                                                                <p class="form-control-static" data-display="cne">
-                                                                </p>
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group">
-                                                            <label class="control-label col-md-4">Baccalauréat:</label>
-                                                            <div class="col-md-4">
-                                                                <p class="form-control-static" data-display="bac">
-                                                                </p>
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group">
-                                                            <label class="control-label col-md-4">Année du BAC:</label>
-                                                            <div class="col-md-4">
-                                                                <p class="form-control-static" data-display="annee-bac">
-                                                                </p>
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group">
-                                                            <label class="control-label col-md-4">Couverture Médicale :</label>
-                                                            <div class="col-md-4">
-                                                                <p class="form-control-static" data-display="couverture">
-                                                                </p>
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group">
-                                                            <label class="control-label col-md-4">Régime:</label>
-                                                            <div class="col-md-4">
-                                                                <p class="form-control-static" data-display="regime">
-                                                                </p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
+														<div class="form-group">
+															<label class="control-label col-md-4">Niveau<span class="required">
+															* </span>
+															</label>
+															<div class="col-md-4">
+																<input type="text" class="form-control" name="niveau"/>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											
+											<div class="tab-pane" id="tab5">
+												<h3 class="block">Etat Civil</h3>
+												<div class="form-group">
+													<div class="form-group col-md-6 col-sm-12 ">
+														<div class="form-group">
+															<label class="control-label col-md-4">CIN du Conjoint<span class="required">
+															* </span>
+															</label>
+															<div class="col-md-4">
+																<input type="text" class="form-control" name="cin_conjoint"/>
+															</div>
+														</div>
+														<div class="form-group">
+															<label class="control-label col-md-4">Date de mariage <span class="required">
+															* </span>
+															</label>
+															<div class="col-md-4">
+																<input type="date" class="form-control" name="mariage" min="2005-01-01" max="2015-01-01"/>
+															</div>
+														</div>
+													</div>
+													
+													<div class="form-group col-md-6 col-sm-12 ">
+														<div class="form-group">
+															<label class="control-label col-md-4">Date de divorce <span class="required">
+															* </span>
+															</label>
+															<div class="col-md-4">
+																<input type="date" class="form-control" name="divorce" min="1990-01-31" max="2016-01-31"/>
+															</div>
+														</div>
+														<div class="form-group">
+															<label class="control-label col-md-4">Date de decès <span class="required">
+															* </span>
+															</label>
+															<div class="col-md-4">
+																<input type="date" class="form-control" name="deces" min="1990-01-01" max="2016-01-31"/>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
 
 
 
-                                            </div>
-                                            <div class="form-actions">
-                                                <div class="row">
-                                                    <div class="col-md-offset-3 col-md-9">
-                                                        <a href="javascript:;" class="btn default button-previous">
-                                                            <i class="m-icon-swapleft"></i> Back </a>
-                                                        <a href="javascript:;" class="btn blue button-next">
-                                                            Continue <i class="m-icon-swapright m-icon-white"></i>
-                                                        </a>
-                                                        <a href="javascript:;" class="btn green button-submit">
-                                                            Submit <i class="m-icon-swapright m-icon-white"></i>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- END PAGE CONTENT INNER -->
-            </div>
-        </div>
-        <!-- END PAGE CONTENT -->
-    </div>
-    <!-- END PAGE CONTAINER -->
+											<div class="tab-pane" id="tab6">
+												<!-- DEBUT TABLEAU 1 -->
+												<div id="print1">
+													<div class="barcode">
+														<p><img src="{{ asset('assets/admin/layout3/img/barcode.jpg') }}" /></p>
+													</div>
+													<div class="spacer"></div>
+													<p><div class="title">FICHE N&#176;1 : DECLARATION SUR LA COUVERTURE MEDICALE DE BASE DE L'ETUDIANT</div></p>
+													<p><div class="subtitle">Cas d'un(e) &eacute;tudiant(e) c&eacute;libataire</div></p>
+
+													<div class="block">
+														<p><div class="title">Informations sur le cursus universitaire</div></p>
+														<table>
+															<tr>
+																<td>Ann&eacute;e d'inscription ou de r&eacute;inscription :</td>
+																<td ><p class="form-control-static" data-display="inscription"></p></td>
+															</tr>
+															<tr>
+																<td>Personne de droit public ou de droit priv&eacute; :</td>
+																<td ><p class="form-control-static" data-display="secteur"></p></td>
+															</tr>
+															<tr>
+																<td>Etablissement :</td>
+																<td ><p class="form-control-static" data-display="etablissement"></p></td>
+															</tr>
+														</table>
+														<div class="spacer"></div>
+													</div>
+													<div class="spacer"></div>
+													<div class="block">
+														<p><div class="title">Coordon&eacute;es de l'&eacute;tudiant</div></p>
+														<table>
+															<tr>
+																<td>N&#176; CNIE / N&#176; CNE :</td>
+																<td ><p class="form-control-static" data-display="cne"></p></td>
+															</tr>
+															<tr>
+																<td>Nom &amp; Pr&eacute;nom :</td>
+																<td ><p class="form-control-static" data-display="nom"></p>&nbsp<p class="form-control-static" data-display="prenom"></p></td>
+															</tr>
+															<tr>
+																<td>Date de naissance :</td>
+																<td ><p class="form-control-static" data-display="date_naiss"></p></td>
+															</tr>
+															<tr>
+																<td>Adresse :</td>
+																<td >
+																	<p class="form-control-static" data-display="adresse1"></p>,&nbsp
+																	<p class="form-control-static" data-display="adresse2"></p>
+																</td>
+															</tr>
+															<tr>
+																<td>Pays d'origine :</td>
+																<td ><p class="form-control-static" data-display="pays"></p></td>
+															</tr>
+															<tr>
+																<td>N&#176; du Compte bancaire (RIB) :</td>
+																<td ><p class="form-control-static" data-display="compte"></p></td>
+															</tr>
+															<tr>
+																<td>Couverture m&eacute;dicale de base :</td>
+																<td ><p class="form-control-static" data-display="couverture"></p></td>
+															</tr>
+														</table>
+														<div class="spacer"></div>
+													</div>
+													<div class="spacer"></div>
+													<div class="block">
+														<p><div class="title">Information(s) sur le p&egrave;re</div></p>
+														<table>
+															<tr>
+																<td>N&#176; CNI :</td>
+																<td ><p class="form-control-static" data-display="cni_pere"></p></td>
+															</tr>
+															<tr>
+																<td>Nom &amp;, pr&eacute;nom et date de naissance :</td>
+																<td >
+																	<p class="form-control-static" data-display="nom_pere"></p>&nbsp
+																	<p class="form-control-static" data-display="prenom_pere"></p>&nbsp
+																	<p class="form-control-static" data-display="date_naiss_pere"></p>
+																</td>
+															</tr>
+															<tr>
+																<td>Date de d&eacute;c&egrave;s :</td>
+																<td ><p class="form-control-static" data-display="date_dece_pere"></p></td>
+															</tr>
+														</table>
+														<div class="spacer"></div>
+													</div>
+													<div class="spacer"></div>
+													<div class="block">
+														<p><div class="title">Information(s) sur le m&egrave;re</div></p>
+														<table>
+															<tr>
+																<td>N&#176; CNI :</td>
+																<td ><p class="form-control-static" data-display="cni_mere"></p></td>
+															</tr>
+															<tr>
+																<td>Nom &amp;, pr&eacute;nom et date de naissance :</td>
+																<td >
+																	<p class="form-control-static" data-display="nom_mere"></p>&nbsp
+																	<p class="form-control-static" data-display="prenom_mere"></p>&nbsp
+																	<p class="form-control-static" data-display="date_naiss_mere"></p>
+																</td>
+															</tr>
+														<tr>
+															<td>Date de d&eacute;c&egrave;s :</td>
+															<td ><p class="form-control-static" data-display="date_dece_mere"></p></td>
+														</tr>
+													</table>
+													<div class="spacer"></div>
+												</div>
+												<div class="spacer"></div>
+												<div class="block">
+													<table>
+														<tr>
+															<td><p><div class="title">Signature l&eacute;galis&eacute;e de l'&eacute;tudiant</div></p></td>
+															<td><p><div class="title">Cachet de l'&eacute;tablissement</div></p></td>
+														</tr>
+														<tr>
+															<td></td>
+															<td><b>Date d'inscription de l'&eacute;tudiant : 20/09/2015</b> <br/>
+																<b>Date de validation de la fiche : 17/10/2015</b></td>
+															</tr>
+														</table>
+														<div class="spacer"></div>
+													</div>
+													<br/>
+													<p>Cette fiche est consid&eacute;r&eacute;e comme une d&eacute;claration sur l'honneur. Il s'en suit que toute fausse d&eacute;claration peut d&eacute;clencher des poursuites p&eacute;nales &agrave; l'encontre de son auteur.</p>
+												</div>
+												<!-- FIN TABLEAU 1 -->
+
+												<!-- DEBUT TABLEAU 2 -->
+
+												<div id="print2">
+													<div class="barcode">
+														<p><img src="img/barcode.jpg" /></p>
+													</div>
+													<div class="spacer"></div>
+													<p><div class="title">FICHE N&#176;2 : DECLARATION SUR LA COUVERTURE MEDICALE DE BASE DE L'ETUDIANT</div></p>
+													<p><div class="subtitle">Cas d'un(e) &eacute;tudiant(e) mari&eacute;(e)</div></p>
+
+													<div class="block">
+														<p><div class="title">Informations sur le cursus universitaire</div></p>
+														<table>
+															<tr>
+																<td>Ann&eacute;e d'inscription ou de r&eacute;inscription :</td>
+																<td ><p class="form-control-static" data-display="inscription"></p></td>
+															</tr>
+															<tr>
+																<td>Personne de droit public ou de droit priv&eacute; :</td>
+																<td ><p class="form-control-static" data-display="secteur"></p></td>
+															</tr>
+															<tr>
+																<td>Etablissement :</td>
+																<td ><p class="form-control-static" data-display="etablissement"></p></td>
+															</tr>
+														</table>
+														<div class="spacer"></div>
+													</div>
+													<div class="spacer"></div>
+													<div class="block">
+														<p><div class="title">Coordon&eacute;es de l'&eacute;tudiant</div></p>
+														<table>
+															<tr>
+																<td>N&#176; CNIE / N&#176; CNE :</td>
+																<td >
+																	<p class="form-control-static" data-display="cni">
+																	<p class="form-control-static" data-display="cne">
+																	</p></td>
+															</tr>
+															<tr>
+																<td>Nom &amp; Pr&eacute;nom :</td>
+																<td >
+																	<p class="form-control-static" data-display="nom"></p>&nbsp
+																	<p class="form-control-static" data-display="prenom"></p>
+																</td>
+															</tr>
+															<tr>
+																<td>Date de naissance :</td>
+																<td ><p class="form-control-static" data-display="naissance"></p></td>
+															</tr>
+															<tr>
+																<td>Adresse :</td>
+																<td >
+																	<p class="form-control-static" data-display="adresse1"></p>,&nbsp
+																	<p class="form-control-static" data-display="adresse2"></p>
+																</td>
+															</tr>
+															<tr>
+																<td>Pays d'origine :</td>
+																<td><p class="form-control-static" data-display="pays"></p></td>
+															</tr>
+															<tr>
+																<td>N&#176; du Compte bancaire (RIB) :</td>
+																<td><p class="form-control-static" data-display="compte"></p></td>
+															</tr>
+															<tr>
+																<td>Couverture m&eacute;dicale de base :</td>
+																<td><p class="form-control-static" data-display="couverture"></p></td>
+															</tr>
+														</table>
+														<div class="spacer"></div>
+													</div>
+													<div class="spacer"></div>
+													<div class="block">
+														<p><div class="title">Information(s) sur le conjoint</div></p>
+														<table>
+															<tr>
+																<td>N&#176; CNIE :</td>
+																<td><p class="form-control-static" data-display="cni_conjoint"></p></td>
+															</tr>
+														</table>
+														<div class="spacer"></div>
+													</div>
+													<div class="spacer"></div>
+													<div class="block">
+														<table>
+															<tr>
+																<td><p><div class="title">Signature l&eacute;galis&eacute;e de l'&eacute;tudiant</div></p></td>
+																<td><p><div class="title">Cachet de l'&eacute;tablissement</div></p></td>
+															</tr>
+															<tr>
+																<td></td>
+																<td><b>Date d'inscription de l'&eacute;tudiant : 20/09/2015</b> <br/>
+																	<b>Date de validation de la fiche : 17/10/2015</b></td>
+																</tr>
+															</table>
+															<div class="spacer"></div>
+														</div>
+														<br/>
+														<p>Cette fiche est consid&eacute;r&eacute;e comme une d&eacute;claration sur l'honneur. Il s'en suit que toute fausse d&eacute;claration peut d&eacute;clencher des poursuites p&eacute;nales &agrave; l'encontre de son auteur.</p>
+													</div>
+
+
+													<!-- FIN TABLEAU 2 -->
+
+													<!-- DEBUT TABLEAU 3 -->
+												<div id="print3">
+														<div class="barcode">
+															<p><img src="img/barcode.jpg" /></p>
+														</div>
+														<div class="spacer"></div>
+														<p><div class="title">FICHE N&#176;3 : DECLARATION SUR LA COUVERTURE MEDICALE DE BASE DE L'ETUDIANT</div></p>
+														<p><div class="subtitle">Cas d'un(e) &eacute;tudiant(e) divorc&eacute;(e)</div></p>
+
+														<div class="block">
+															<p><div class="title">Informations sur le cursus universitaire</div></p>
+															<table>
+																<tr>
+																	<td>Ann&eacute;e d'inscription ou de r&eacute;inscription :</td>
+																<td><p class="form-control-static" data-display="inscription"></p></td>
+																</tr>
+																<tr>
+																	<td>Personne de droit public ou de droit priv&eacute; :</td>
+																<td><p class="form-control-static" data-display="secteur"></p></td>
+																</tr>
+																<tr>
+																	<td>Etablissement :</td>
+																<td><p class="form-control-static" data-display="etablissement"></p></td>
+																</tr>
+															</table>
+															<div class="spacer"></div>
+														</div>
+														<div class="spacer"></div>
+														<div class="block">
+															<p><div class="title">Coordon&eacute;es de l'&eacute;tudiant</div></p>
+															<table>
+																<tr>
+																	<td>N&#176; CNIE / N&#176; CNE :</td>
+																	<td>
+																		<p class="form-control-static" data-display="cni"></p>
+																		<p class="form-control-static" data-display="cne"></p>
+																	</td>
+																</tr>
+																<tr>
+																	<td>Nom &amp; Pr&eacute;nom :</td>
+																	<td>
+																		<p class="form-control-static" data-display="cni"></p>
+																		<p class="form-control-static" data-display="cne"></p>
+																	</td>
+																</tr>
+																<tr>
+																	<td>Date de naissance :</td>
+																<td><p class="form-control-static" data-display="naissance"></p></td>
+																</tr>
+																<tr>
+																	<td>Adresse :</td>
+																	<td>
+																		<p class="form-control-static" data-display="adresse1"></p>,&nbsp
+																		<p class="form-control-static" data-display="adresse2"></p>
+																	</td>
+																</tr>
+																<tr>
+																	<td>Pays d'origine :</td>
+																<td><p class="form-control-static" data-display="pays"></p></td>
+																</tr>
+																<tr>
+																	<td>N&#176; du Compte bancaire (RIB) :</td>
+																<td><p class="form-control-static" data-display="compte"></p></td>
+																</tr>
+																<tr>
+																	<td>Couverture m&eacute;dicale de base :</td>
+																<td><p class="form-control-static" data-display="couverture"></p></td>
+																</tr>
+															</table>
+															<div class="spacer"></div>
+														</div>
+														<div class="spacer"></div>
+														<div class="block">
+															<p><div class="title">Information(s) sur le p&egrave;re</div></p>
+															<table>
+																<tr>
+																	<td>N&#176; CNIE :</td>
+																<td><p class="form-control-static" data-display="cni_pere"></p></td>
+																</tr>
+																<tr>
+																<td>Nom &amp;, pr&eacute;nom et date de naissance :</td>
+																<td >
+																	<p class="form-control-static" data-display="nom_pere"></p>&nbsp
+																	<p class="form-control-static" data-display="prenom_pere"></p>&nbsp
+																	<p class="form-control-static" data-display="naissance_pere"></p>
+																</td>
+															</tr>
+																<tr>
+																	<td>Date de d&eacute;c&egrave;s :</td>
+																<td><p class="form-control-static" data-display="deces_pere"></p></td>
+																</tr>
+															</table>
+															<div class="spacer"></div>
+														</div>
+														<div class="spacer"></div>
+														<div class="block">
+															<p><div class="title">Information(s) sur le m&egrave;re</div></p>
+															<table>
+																<tr>
+																	<td>N&#176; CNIE :</td>
+																<td><p class="form-control-static" data-display="cni_mere"></p></td>
+																</tr>
+																<tr>
+																<td>Nom &amp;, pr&eacute;nom et date de naissance :</td>
+																<td >
+																	<p class="form-control-static" data-display="nom_mere"></p>&nbsp
+																	<p class="form-control-static" data-display="prenom_mere"></p>&nbsp
+																	<p class="form-control-static" data-display="date_naiss_mere"></p>
+																</td>
+															</tr>
+																<tr>
+																	<td>Date de d&eacute;c&egrave;s :</td>
+																<td><p class="form-control-static" data-display="date_dece_mere"></p></td>
+																</tr>
+															</table>
+															<div class="spacer"></div>
+														</div>
+														<div class="spacer"></div>
+														<div class="block">
+															<p><div class="title">Information(s) sur le conjoint</div></p>
+															<table>
+																<tr>
+																	<td>N&#176; CNIE :</td>
+																<td><p class="form-control-static" data-display="cni_conjoint"></p></td>
+																</tr>
+																<tr>
+																	<td>Date de divorce :</td>
+																<td><p class="form-control-static" data-display="date_divorce"></p></td>
+																</tr>
+																<tr>
+																	<td>Date de décès :</td>
+																<td><p class="form-control-static" data-display="date_dece_conjoint"></p></td>
+																</tr>
+															</table>
+															<div class="spacer"></div>
+														</div>
+														<div class="spacer"></div>
+														<div class="block">
+															<table>
+																<tr>
+																	<td><p><div class="title">Signature l&eacute;galis&eacute;e de l'&eacute;tudiant</div></p></td>
+																	<td><p><div class="title">Cachet de l'&eacute;tablissement</div></p></td>
+																</tr>
+																<tr>
+																	<td></td>
+																	<td><b>Date d'inscription de l'&eacute;tudiant : 20/09/2015</b> <br/>
+																		<b>Date de validation de la fiche : 17/10/2015</b></td>
+																	</tr>
+																</table>
+																<div class="spacer"></div>
+															</div>
+															<br/>
+															<p>Cette fiche est consid&eacute;r&eacute;e comme une d&eacute;claration sur l'honneur. Il s'en suit que toute fausse d&eacute;claration peut d&eacute;clencher des poursuites p&eacute;nales &agrave; l'encontre de son auteur.</p>
+														</div>
+
+														<!-- DEBUT TABLEAU 3 -->
+
+														<!-- DEBUT TABLEAU 4 -->
+												<div id="print4">
+															<div class="barcode">
+																<p><img src="{{ asset('assets/global/plugins/bootstrap/img/barcode.jpg') }}" /></p>
+															</div>
+															<div class="spacer"></div>
+															<p><div class="title">FICHE N&#176;4 : DECLARATION SUR LA COUVERTURE MEDICALE DE BASE DE L'ETUDIANT</div></p>
+															<p><div class="subtitle">Cas d'un(e) &eacute;tudiant(e) veuf(ve)</div></p>
+
+															<div class="block">
+																<p><div class="title">Informations sur le cursus universitaire</div></p>
+																<table>
+																	<tr>
+																		<td>Ann&eacute;e d'inscription ou de r&eacute;inscription :</td>
+																<td><p class="form-control-static" data-display="inscription"></p></td>
+																	</tr>
+																	<tr>
+																		<td>Personne de droit public ou de droit priv&eacute; :</td>
+																<td><p class="form-control-static" data-display="secteur"></p></td>
+																	</tr>
+																	<tr>
+																		<td>Etablissement :</td>
+																<td><p class="form-control-static" data-display="etablissement"></p></td>
+																	</tr>
+																</table>
+																<div class="spacer"></div>
+															</div>
+															<div class="spacer"></div>
+															<div class="block">
+																<p><div class="title">Coordon&eacute;es de l'&eacute;tudiant</div></p>
+																<table>
+																	<tr>
+																		<td>N&#176; CNIE / N&#176; CNE :</td>
+																		<td>
+																			<p class="form-control-static" data-display="cni"></p>
+																			<p class="form-control-static" data-display="cne"></p>
+																		</td>
+																	</tr>
+																	<tr>
+																		<td>Nom &amp; Pr&eacute;nom :</td>
+																		<td>
+																			<p class="form-control-static" data-display="nom"></p>&nbsp
+																			<p class="form-control-static" data-display="prenom"></p>
+																		</td>																	</tr>
+																	<tr>
+																		<td>Date de naissance :</td>
+																<td><p class="form-control-static" data-display="etablissement"></p></td>
+																	</tr>
+																	<tr>
+																		<td>Adresse :</td>
+																		<td >
+																			<p class="form-control-static" data-display="adresse1"></p>,&nbsp
+																			<p class="form-control-static" data-display="adresse2"></p>
+																		</td>																	</tr>
+																	<tr>
+																		<td>Pays d'origine :</td>
+																<td><p class="form-control-static" data-display="pays"></p></td>
+																	</tr>
+																	<tr>
+																		<td>N&#176; du Compte bancaire (RIB) :</td>
+																<td><p class="form-control-static" data-display="compte"></p></td>
+																	</tr>
+																	<tr>
+																		<td>Couverture m&eacute;dicale de base :</td>
+																<td><p class="form-control-static" data-display="couverture"></p></td>
+																	</tr>
+																</table>
+																<div class="spacer"></div>
+															</div>
+															<div class="spacer"></div>
+															<div class="block">
+																<p><div class="title">Information(s) sur le p&egrave;re</div></p>
+																<table>
+																	<tr>
+																		<td>N&#176; CNIE :</td>
+																<td><p class="form-control-static" data-display="cni_pere"></p></td>
+																	</tr>
+																	<tr>
+																		<td>Nom &amp;, pr&eacute;nom et date de naissance :</td>
+																		<td >
+																			<p class="form-control-static" data-display="nom_pere"></p>&nbsp
+																			<p class="form-control-static" data-display="prenom_pere"></p>&nbsp
+																			<p class="form-control-static" data-display="date_naiss_pere"></p>
+																		</td>															
+																	</tr>
+																	<tr>
+																		<td>Date de d&eacute;c&egrave;s :</td>
+																<td><p class="form-control-static" data-display="date_dece_pere"></p></td>
+																	</tr>
+																</table>
+																<div class="spacer"></div>
+															</div>
+															<div class="spacer"></div>
+															<div class="block">
+																<p><div class="title">Information(s) sur le m&egrave;re</div></p>
+																<table>
+																	<tr>
+																		<td>N&#176; CNIE :</td>
+																<td><p class="form-control-static" data-display="cni_mere"></p></td>
+																	</tr>
+																	<tr>
+																		<td>Nom &amp;, pr&eacute;nom et date de naissance :</td>
+																		<td >
+																			<p class="form-control-static" data-display="nom_mere"></p>&nbsp
+																			<p class="form-control-static" data-display="prenom_mere"></p>&nbsp
+																			<p class="form-control-static" data-display="date_naiss_mere"></p>
+																		</td>															
+																	</tr>
+																	<tr>
+																		<td>Date de d&eacute;c&egrave;s :</td>
+																<td><p class="form-control-static" data-display="date_dece_mere"></p></td>
+																	</tr>
+																</table>
+																<div class="spacer"></div>
+															</div>
+															<div class="spacer"></div>
+															<div class="block">
+																<p><div class="title">Information(s) sur le conjoint</div></p>
+																<table>
+																	<tr>
+																		<td>N&#176; CNIE :</td>
+																<td><p class="form-control-static" data-display="cni_conjoint"></p></td>
+																	</tr>
+																	<tr>
+																		<td>Date de d&eacute;c&egrave;s :</td>
+																<td><p class="form-control-static" data-display="date_dece_conjoint"></p></td>
+																	</tr>
+																</table>
+																<div class="spacer"></div>
+															</div>
+															<div class="spacer"></div>
+															<div class="block">
+																<table>
+																	<tr>
+																		<td><p><div class="title">Signature l&eacute;galis&eacute;e de l'&eacute;tudiant</div></p></td>
+																		<td><p><div class="title">Cachet de l'&eacute;tablissement</div></p></td>
+																	</tr>
+																	<tr>
+																		<td></td>
+																		<td><b>Date d'inscription de l'&eacute;tudiant : 20/09/2015</b> <br/>
+																			<b>Date de validation de la fiche : 17/10/2015</b></td>
+																		</tr>
+																	</table>
+																	<div class="spacer"></div>
+																</div>
+																<br/>
+																<p>Cette fiche est consid&eacute;r&eacute;e comme une d&eacute;claration sur l'honneur. Il s'en suit que toute fausse d&eacute;claration peut d&eacute;clencher des poursuites p&eacute;nales &agrave; l'encontre de son auteur.</p>
+															</div>
+
+															<!-- DEBUT TABLEAU 4 -->
+
+															<!-- DEBUT TABLEAU 5 -->
+															<div id="print5">
+																<div class="barcode">
+																	<p><img src="img/barcode.jpg" /></p>
+																</div>
+																<div class="spacer"></div>
+																<p><div class="title">FICHE N&#176;5 : DECLARATION SUR LA COUVERTURE MEDICALE DE BASE DE L'ETUDIANT</div></p>
+																<p><div class="subtitle">Cas d'un(e) &eacute;tudiant(e) de nationalit&eacute; &eacute;trang&egrave;re</div></p>
+
+																<div class="block">
+																	<p><div class="title">Informations sur le cursus universitaire</div></p>
+																	<table>
+																		<tr>
+																			<td>Ann&eacute;e d'inscription ou de r&eacute;inscription :</td>
+																<td><p class="form-control-static" data-display="inscription"></p></td>
+																		</tr>
+																		<tr>
+																			<td>Personne de droit public ou de droit priv&eacute; :</td>
+																<td><p class="form-control-static" data-display="secteur"></p></td>
+																		</tr>
+																		<tr>
+																			<td>Etablissement :</td>
+																<td><p class="form-control-static" data-display="etablissement"></p></td>
+																		</tr>
+																	</table>
+																	<div class="spacer"></div>
+																</div>
+																<div class="spacer"></div>
+																<div class="block">
+																	<p><div class="title">Coordon&eacute;es de l'&eacute;tudiant</div></p>
+																	<table>
+																		<tr>
+																			<td>N&#176; CNIE / N&#176; CNE :</td>
+																			<td >
+																				<p class="form-control-static" data-display="cni"></p>&nbsp
+																				<p class="form-control-static" data-display="cne"></p>
+																			</td>																
+																		</tr>
+																		<tr>
+																			<td>Nom &amp; Pr&eacute;nom :</td>
+																			<td >
+																				<p class="form-control-static" data-display="nom"></p>&nbsp
+																				<p class="form-control-static" data-display="prenom"></p>
+																			</td>
+																		</tr>
+																		<tr>
+																			<td>Date de naissance :</td>
+																<td><p class="form-control-static" data-display="date_naiss"></p></td>
+																		</tr>
+																		<tr>
+																			<td>Adresse :</td>
+																			<td >
+																				<p class="form-control-static" data-display="adress1"></p>,&nbsp
+																				<p class="form-control-static" data-display="adresse2"></p>
+																			</td>
+																		</tr>
+																		<tr>
+																			<td>Pays d'origine :</td>
+																<td><p class="form-control-static" data-display="pays"></p></td>
+																		</tr>
+																		<tr>
+																			<td>N&#176; du Compte bancaire (RIB) :</td>
+																<td><p class="form-control-static" data-display="compte"></p></td>
+																		</tr>
+																	</table>
+																	<div class="spacer"></div>
+																</div>
+																<div class="spacer"></div>
+																<div class="block">
+																	<table>
+																		<tr>
+																			<td><p><div class="title">Signature l&eacute;galis&eacute;e de l'&eacute;tudiant</div></p></td>
+																			<td><p><div class="title">Cachet de l'&eacute;tablissement</div></p></td>
+																		</tr>
+																		<tr>
+																			<td></td>
+																			<td><b>Date d'inscription de l'&eacute;tudiant : 20/09/2015</b> <br/>
+																				<b>Date de validation de la fiche : 17/10/2015</b></td>
+																			</tr>
+																		</table>
+																		<div class="spacer"></div>
+																	</div>
+																	<br/>
+																	<p>Cette fiche est consid&eacute;r&eacute;e comme une d&eacute;claration sur l'honneur. Il s'en suit que toute fausse d&eacute;claration peut d&eacute;clencher des poursuites p&eacute;nales &agrave; l'encontre de son auteur.</p>
+																</div>
+
+																<!-- DEBUT TABLEAU 5 -->
+
+
+																<script>
+																		var inputs = document.getElementsByName("situation").value;
+																	
+																			document.getElementById('print1').style.display = 'visible';
+																			document.getElementById('print2').style.display = 'none';
+																			document.getElementById('print3').style.display = 'none';
+																			document.getElementById('print4').style.display = 'none';
+																			document.getElementById('print5').style.display = 'none';
+																	
+																			
+																		
+																</script>
+
+											</div>
+									</div>
+									<div class="form-actions">
+										<div class="row">
+											<div class="col-md-offset-3 col-md-9">
+												<a href="javascript:;" class="btn default button-previous">
+												<i class="m-icon-swapleft"></i> Back </a>
+												<a href="javascript:;" class="btn blue button-next">
+												Continue <i class="m-icon-swapright m-icon-white"></i>
+												</a>
+												<a href="javascript:;" class="btn green button-submit">
+												Submit <i class="m-icon-swapright m-icon-white"></i>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- END PAGE CONTENT INNER -->
+		</div>
+	</div>
+	<!-- END PAGE CONTENT -->
+</div>
+<!-- END PAGE CONTAINER -->
 {% endblock %}
 {% block javascripts %}
     <!-- END FOOTER -->
@@ -1111,6 +1668,7 @@
     <script src="{{ asset('assets/admin/layout3/scripts/layout.js') }}" type="text/javascript"></script>
     <script src="{{ asset('assets/admin/layout3/scripts/demo.js') }}" type="text/javascript"></script>
     <script src="{{ asset('assets/admin/pages/scripts/form-wizard.js') }}"></script>
+    <script src="{{ asset('assets/admin/pages/scripts/saisie_etudiant.js') }}"></script>
     <!-- END PAGE LEVEL SCRIPTS -->
     <script>
         jQuery(document).ready(function () {
@@ -1120,5 +1678,51 @@
             Demo.init(); // init demo features
             FormWizard.init();
         });
+    </script>
+    <script>
+        function disable() {
+	if(document.getElementById('situation-link').value == "marie") {
+		var node = document.createElement("li");
+		var att0 = document.createAttribute("id");
+		att0.value = "situation";
+		node.setAttributeNode(att0);
+		
+		var link = document.createElement("a");
+		var att1 = document.createAttribute("href");
+		att1.value = "#tab5";
+		var att2 = document.createAttribute("data-toggle");
+		att2.value = "tab";
+		var att3 = document.createAttribute("class");
+		att3.value = "step";
+		link.setAttributeNode(att1);
+		link.setAttributeNode(att2);
+		link.setAttributeNode(att3);
+
+		var span1 = document.createElement("span");
+		var att4 = document.createAttribute("class");
+		att4.value = "number";
+		span1.setAttributeNode(att4);
+		var text1 = document.createTextNode("5 ");
+		span1.appendChild(text1);
+		var span2 = document.createElement("span");
+		var att5 = document.createAttribute("class");
+		att5.value = "desc";
+		span2.setAttributeNode(att5);
+		var text2 = document.createTextNode(" Etat Civil ");
+		span2.appendChild(text2);
+		link.appendChild(span1);
+		link.appendChild(span2);
+		
+		node.appendChild(link);
+		var step = document.getElementById("step-list");
+		step.insertBefore(node, step.childNodes[2]);
+	}
+	else {
+		if(document.getElementById("situation")) {
+			var element = document.getElementById("situation");
+			document.getElementById("step-list").removeChild(element);
+		}
+	}	
+}
     </script>
 {% endblock %}
